@@ -1,0 +1,28 @@
+:root{--bg:#faf8f4;--surface:#fff;--ink:#1b221e;--muted:#5b635e;--accent:#22382c;--gold:#a9864c;--border:#e5dfd4}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+a{color:var(--accent)}
+.container{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+.site-header{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:.9rem 1.25rem;gap:1rem;flex-wrap:wrap}
+.brand{font-family:Georgia,serif;font-weight:700;font-size:1.25rem;text-decoration:none;color:var(--accent)}
+nav{display:flex;gap:1rem;flex-wrap:wrap;font-size:.9rem}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:2.5rem 0 2rem;border-bottom:1px solid var(--border);margin-bottom:2rem}
+.hero h1{font-family:Georgia,serif;font-size:clamp(1.8rem,4vw,2.7rem);margin:0 0 .6rem;line-height:1.15}
+.search-box{width:100%;max-width:440px;padding:.7rem 1rem;border:1px solid var(--border);border-radius:999px;font-size:.95rem;margin-top:1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin:1.5rem 0 3rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;height:180px;object-fit:cover;display:block}
+.card-body{padding:1.1rem;display:flex;flex-direction:column;flex:1}
+.badge{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);font-weight:700}
+.card h2,.card h3{font-family:Georgia,serif;font-size:1.2rem;margin:.35rem 0 .5rem}
+.article-wrap{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:2rem;margin:2rem 0}
+.article-wrap img{max-width:100%;height:auto;border-radius:8px}
+.zazzle-cta-card{display:inline-block;margin:.6rem 0;padding:.75rem 1.4rem;background:var(--accent);color:#fff!important;border-radius:999px;text-decoration:none;font-weight:600}
+blockquote{margin:1rem 0;padding:.8rem 1rem;background:#f4efe6;border-left:4px solid var(--gold);border-radius:4px}
+.breadcrumb{font-size:.85rem;color:var(--muted);margin-bottom:1rem}
+.site-footer{border-top:1px solid var(--border);padding:2rem 0;margin-top:3rem;text-align:center;font-size:.85rem;color:var(--muted)}
+.footer-links a{margin:0 .35rem}
+@media(max-width:640px){.article-wrap{padding:1.25rem}}
