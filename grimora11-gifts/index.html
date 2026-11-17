@@ -3,279 +3,479 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="p:domain_verify" content="c9c08666e4b79fa1abc646b1a32ab003"/>
+  <meta name="p:domain_verify" content="c9c08666e4b79fa1abc646b1a32ab003" />
   <title>GRIMORA11 | Heirloom Holiday Cards, Artisan Mugs &amp; Cozy Graphic Tees</title>
-  <meta name="description" content="Curated US gift guide by GRIMORA11: heirloom tartan holiday cards, woodcut Veterans Day stationery, artisan ceramic mugs, cozy bookish tees, and botanical business cards on Zazzle." />
+  <meta name="description" content="Curated US gift guide by GRIMORA11: Pinkmas coquette holiday cards, Old Money tartan ornaments, retro martini gifts, artisan ceramic mugs, and cozy graphic tees on Zazzle." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #faf7f2;
+      --bg: #faf8f4;
       --surface: #ffffff;
-      --ink: #1e2421;
-      --muted: #5a635e;
-      --accent: #1e382b;
-      --gold: #c5a059;
-      --crimson: #9e2a2b;
-      --border: #e5dfd5;
+      --ink: #1b221e;
+      --muted: #666c68;
+      --accent: #22382c;
+      --gold: #a9864c;
+      --border: #e7e1d7;
     }
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
-      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
       background: var(--bg);
       color: var(--ink);
       line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
     }
-    header {
-      background: var(--accent);
-      color: #faf7f2;
+    a { color: inherit; text-decoration: none; }
+
+    /* Minimal Top Bar */
+    .topbar {
+      border-bottom: 1px solid var(--border);
+      background: rgba(250, 248, 244, 0.92);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+    .topbar-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0.9rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .brand {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.4rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--muted);
+    }
+    .nav-links a:hover { color: var(--ink); }
+
+    /* Clean Editorial Hero */
+    .hero {
+      max-width: 1180px;
+      margin: 0 auto;
       padding: 3.5rem 1.5rem 3rem;
-      text-align: center;
-      border-bottom: 4px solid var(--gold);
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3rem;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
     }
-    .kicker {
-      letter-spacing: 0.18em;
-      font-size: 0.78rem;
+    @media (max-width: 820px) {
+      .hero { grid-template-columns: 1fr; padding: 2.2rem 1.25rem; gap: 2rem; }
+      .nav-links { display: none; }
+    }
+    .eyebrow {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--gold);
-      font-weight: 600;
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.9rem;
     }
-    h1, h2, h3 {
+    .hero h1 {
       font-family: "Cormorant Garamond", Georgia, serif;
-      margin-top: 0;
+      font-size: clamp(2.3rem, 4.2vw, 3.6rem);
+      font-weight: 600;
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.15rem;
+      color: var(--ink);
     }
-    header h1 {
-      font-size: clamp(2.2rem, 5vw, 3.4rem);
-      margin-bottom: 0.75rem;
-      line-height: 1.1;
-    }
-    header p {
-      max-width: 680px;
-      margin: 0 auto 1.6rem;
-      color: #e6e1d8;
-      font-size: 1.05rem;
+    .hero p {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 520px;
+      margin-bottom: 1.8rem;
     }
     .cta-row {
       display: flex;
-      gap: 0.9rem;
-      justify-content: center;
       flex-wrap: wrap;
+      gap: 0.85rem;
     }
     .btn {
-      display: inline-block;
-      padding: 0.85rem 1.5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.82rem 1.65rem;
       border-radius: 999px;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 0.95rem;
-      transition: transform 0.15s ease, opacity 0.15s ease;
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: transform 0.16s ease, background 0.16s ease;
     }
-    .btn:hover { transform: translateY(-1px); opacity: 0.93; }
-    .btn-primary { background: var(--gold); color: #16251d; }
-    .btn-secondary { border: 1.5px solid #faf7f2; color: #faf7f2; }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--accent);
+      color: #ffffff;
+    }
+    .btn-primary:hover { background: #16261d; }
+    .btn-secondary {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--ink);
+    }
+    .btn-secondary:hover { border-color: var(--ink); }
+
+    .hero-visual {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.9rem;
+    }
+    .hero-img-wrap {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #efeae1;
+      aspect-ratio: 4 / 5;
+    }
+    .hero-img-wrap:last-child { transform: translateY(1.25rem); }
+    .hero-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Filter Bar & Minimalist Grid */
     main {
-      max-width: 1120px;
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 2.8rem 1.5rem 4rem;
+      padding: 3rem 1.5rem 4.5rem;
     }
-    .section-title {
-      font-size: 2rem;
-      margin-bottom: 0.35rem;
-      color: var(--accent);
+    .catalog-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
     }
-    .section-sub {
+    .catalog-head h2 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 2.1rem;
+      font-weight: 600;
+      line-height: 1.15;
+    }
+    .catalog-head p {
       color: var(--muted);
-      margin-top: 0;
-      margin-bottom: 1.8rem;
+      font-size: 0.92rem;
+      margin-top: 0.25rem;
     }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .filter-btn {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--muted);
+      padding: 0.48rem 1rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .filter-btn:hover { border-color: var(--ink); color: var(--ink); }
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.4rem;
-      margin-bottom: 3.2rem;
+      grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+      gap: 2rem 1.5rem;
     }
     .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1.4rem;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      box-shadow: 0 4px 16px rgba(30, 36, 33, 0.04);
+      background: transparent;
     }
+    .card.hidden { display: none; }
+    .card-media {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #efeae1;
+      aspect-ratio: 4 / 5;
+      margin-bottom: 0.9rem;
+    }
+    .card-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+    .card:hover .card-media img { transform: scale(1.03); }
     .badge {
-      display: inline-block;
-      font-size: 0.72rem;
+      font-size: 0.68rem;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--crimson);
-      margin-bottom: 0.5rem;
+      letter-spacing: 0.14em;
+      color: var(--gold);
+      margin-bottom: 0.25rem;
     }
     .card h3 {
-      font-size: 1.45rem;
-      margin-bottom: 0.45rem;
-      line-height: 1.2;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.32rem;
+      font-weight: 600;
+      line-height: 1.22;
+      margin-bottom: 0.4rem;
+      color: var(--ink);
     }
     .card p {
-      font-size: 0.94rem;
+      font-size: 0.86rem;
       color: var(--muted);
-      margin: 0 0 1.2rem;
+      margin-bottom: 0.75rem;
+      flex: 1;
     }
-    .card a {
-      color: var(--accent);
+    .card-link {
+      font-size: 0.84rem;
       font-weight: 600;
-      text-decoration: none;
-      border-bottom: 1.5px solid var(--gold);
-      align-self: flex-start;
-      padding-bottom: 2px;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      border-bottom: 1px solid transparent;
+      width: fit-content;
     }
+    .card-link:hover { border-bottom-color: var(--accent); }
+
     footer {
-      text-align: center;
-      padding: 2rem 1.5rem;
       border-top: 1px solid var(--border);
+      padding: 2.2rem 1.5rem;
+      text-align: center;
       color: var(--muted);
-      font-size: 0.88rem;
+      font-size: 0.85rem;
     }
-    footer a { color: var(--accent); }
+    footer a { text-decoration: underline; text-underline-offset: 3px; }
   </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "GRIMORA11 Curated US Gift Guide",
-    "description": "Original woodcut, botanical, and vintage editorial holiday cards, ceramic mugs, graphic tees, and customizable business stationery on Zazzle.",
-    "url": "https://www.zazzle.com/store/grimora11"
+    "description": "Original woodcut, gouache, and vintage editorial holiday cards, ceramic mugs, graphic tees, and customizable business stationery on Zazzle.",
+    "url": "https://darkshod.github.io/"
   }
   </script>
 </head>
 <body>
-  <header>
-    <div class="kicker">GRIMORA11 Studio &bull; Curated US Gift Guide</div>
-    <h1>Heirloom Holiday Cards, Artisan Mugs &amp; Cozy Graphic Tees</h1>
-    <p>Original woodcut, botanical, and vintage editorial artwork crafted for thoughtful US gifting, cozy home rituals, and small-business branding on Zazzle.</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Shop Full Zazzle Store</a>
-      <a class="btn btn-secondary" href="https://www.pinterest.com/rafafo1225/" target="_blank" rel="noopener">Follow on Pinterest</a>
+  <nav class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="./">GRIMORA11</a>
+      <div class="nav-links">
+        <a href="#catalog">Gift Guide</a>
+        <a href="https://www.zazzle.com/collections/heirloom_holiday_cards_seasonal_gifts-119663743607715696?rf=238181835450951105" target="_blank" rel="noopener">Holiday Collection</a>
+        <a href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Zazzle Store</a>
+        <a href="https://www.pinterest.com/rafafo1225/" target="_blank" rel="noopener">Pinterest</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <div class="eyebrow">Curated US Gift Guide &bull; Printed on Demand in the USA</div>
+      <h1>Heirloom Holiday Cards, Artisan Mugs &amp; Cozy Tees</h1>
+      <p>Small-batch gouache, woodcut, and vintage editorial artwork crafted for thoughtful gifting, cozy home rituals, and customizable small-business stationery.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Shop Full Zazzle Store</a>
+        <a class="btn btn-secondary" href="https://www.pinterest.com/rafafo1225/" target="_blank" rel="noopener">Follow on Pinterest</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrap">
+        <img src="./images/pinkmas-card.jpg" alt="Pinkmas Coquette Bow Tree 5x7 Christmas Card on marble table" loading="eager" />
+      </div>
+      <div class="hero-img-wrap">
+        <img src="./images/tartan-wrap.jpg" alt="Old Money Tartan Rocking Horse Christmas gift wrap under tree" loading="eager" />
+      </div>
     </div>
   </header>
 
-  <main>
-    <h2 class="section-title">Featured Holiday &amp; Patriotic Keepsakes</h2>
-    <p class="section-sub">Customizable 5&times;7 folded cards, ceramic mugs, and stickers printed on demand in the USA.</p>
-    <div class="grid">
-      <article class="card">
-        <div>
-          <span class="badge">Pinkmas Coquette Trend</span>
-          <h3>Pinkmas Coquette Bow Tree Christmas Card</h3>
-          <p>Gouache evergreen tree adorned with blush satin bows, pearls, and brass taper candles on luxury 5&times;7 cardstock.</p>
-        </div>
-        <a href="https://www.zazzle.com/pinkmas_coquette_bow_tree_christmas_card-256802400221516860?rf=238181835450951105" target="_blank" rel="noopener">Customize on Zazzle &rarr;</a>
-      </article>
-      <article class="card">
-        <div>
-          <span class="badge">Holiday Cocktail Club</span>
-          <h3>A Tini Bit Merry Retro Martini Shirt</h3>
-          <p>Mid-century olive martini graphic tee with crimson holiday bow and winter holly garnish for festive happy hours.</p>
-        </div>
-        <a href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_holiday_shirt-256613549210546971?rf=238181835450951105" target="_blank" rel="noopener">View Tee on Zazzle &rarr;</a>
-      </article>
-      <article class="card">
-        <div>
-          <span class="badge">Old Money Holiday Trend</span>
-          <h3>Tartan Rocking Horse Vintage Christmas Card</h3>
-          <p>Heirloom watercolor rocking horse draped in Black Watch tartan with brass sleigh bells and a cedar wreath on 5&times;7 cardstock.</p>
-        </div>
-        <a href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_card-256144319816877027?rf=238181835450951105" target="_blank" rel="noopener">Customize on Zazzle &rarr;</a>
-      </article>
-      <article class="card">
-        <div>
-          <span class="badge">Tree Keepsake</span>
-          <h3>Tartan Rocking Horse Ceramic Ornament</h3>
-          <p>Glossy round ceramic Christmas ornament featuring the Black Watch tartan rocking horse and evergreen holly wreath.</p>
-        </div>
-        <a href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_ornament-256464927123758198?rf=238181835450951105" target="_blank" rel="noopener">View Ornament on Zazzle &rarr;</a>
-      </article>
-      <article class="card">
-        <div>
-          <span class="badge">Heirloom Gift Wrap</span>
-          <h3>Tartan Rocking Horse Wrapping Paper</h3>
-          <p>Seamless repeating Black Watch tartan rocking horse gift wrap printed on heavyweight matte or satin paper.</p>
-        </div>
-        <a href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_wrap_wrapping_paper-256922898737242657?rf=238181835450951105" target="_blank" rel="noopener">View Gift Wrap on Zazzle &rarr;</a>
-      </article>
-      <article class="card">
-        <div>
-          <span class="badge">Holiday Collection</span>
-          <h3>Heirloom Holiday Cards &amp; Seasonal Gifts</h3>
-          <p>Browse matching Black Watch tartan mugs, gift stickers, and traditional holiday keepsakes in one curated Zazzle collection.</p>
-        </div>
-        <a href="https://www.zazzle.com/collections/heirloom_holiday_cards_seasonal_gifts-119663743607715696?rf=238181835450951105" target="_blank" rel="noopener">Explore Collection &rarr;</a>
-      </article>
-      <article class="card">
-        <div>
-          <span class="badge">Patriotic Woodcut</span>
-          <h3>Happy Veterans Day Heritage Eagle Card</h3>
-          <p>Copperplate woodcut bald eagle perched over an oak-and-laurel wreath reading &ldquo;Honoring All Who Served.&rdquo;</p>
-        </div>
-        <a href="https://www.zazzle.com/happy_veterans_day_heritage_eagle_woodcut_greeting_card-256800220164454499?rf=238181835450951105" target="_blank" rel="noopener">Customize on Zazzle &rarr;</a>
-      </article>
+  <main id="catalog">
+    <div class="catalog-head">
+      <div>
+        <h2>Featured 2026 Collection</h2>
+        <p>Click any piece to customize text, choose sizes, and order directly on Zazzle.</p>
+      </div>
+      <div class="filters" role="tablist" aria-label="Filter products by category">
+        <button class="filter-btn active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="holiday" type="button">Holiday</button>
+        <button class="filter-btn" data-filter="mugs" type="button">Mugs</button>
+        <button class="filter-btn" data-filter="apparel" type="button">Apparel</button>
+        <button class="filter-btn" data-filter="stationery" type="button">Art &amp; Stationery</button>
+      </div>
     </div>
 
-    <h2 class="section-title">Cozy Mugs, Home Bar Art &amp; Graphic Tees</h2>
-    <p class="section-sub">Original linocut and editorial illustrations for readers, bakers, potters, and coffee lovers.</p>
     <div class="grid">
-      <article class="card">
-        <div>
-          <span class="badge">Pottery Studio Gift</span>
-          <h3>Kiln &amp; Clay Artisan Ceramics 11oz Mug</h3>
-          <p>Linocut stoneware vases and speckled mug illustration crafted for ceramicists and handmade pottery fans.</p>
-        </div>
-        <a href="https://www.zazzle.com/wheel_thrown_artisan_ceramics_studio_11oz_mug-256335302192274870?rf=238181835450951105" target="_blank" rel="noopener">View Mug on Zazzle &rarr;</a>
+      <article class="card" data-cat="holiday">
+        <a class="card-media" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_christmas_card-256802400221516860?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/pinkmas-card.jpg" alt="Pinkmas Coquette Bow Tree Christmas Card" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Pinkmas Coquette</div>
+        <h3>Pinkmas Coquette Bow Tree Card</h3>
+        <p>Gouache evergreen tree with blush satin bows, pearls, and brass taper candles on 5&times;7 cardstock.</p>
+        <a class="card-link" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_christmas_card-256802400221516860?rf=238181835450951105" target="_blank" rel="noopener">Customize on Zazzle &rarr;</a>
       </article>
-      <article class="card">
-        <div>
-          <span class="badge">Bookish &amp; Tea</span>
-          <h3>Oolong &amp; Paperbacks Bookshop T-Shirt</h3>
-          <p>Steaming cast-iron teapot, open vintage book, and autumn maple leaves on soft unisex cotton apparel.</p>
-        </div>
-        <a href="https://www.zazzle.com/quiet_afternoon_bookshop_and_loose_leaf_tea_t_shirt-256820755168302251?rf=238181835450951105" target="_blank" rel="noopener">View Tee on Zazzle &rarr;</a>
+
+      <article class="card" data-cat="holiday mugs">
+        <a class="card-media" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_11oz_coffee_mug-256760309246942860?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/pinkmas-mug.jpg" alt="Pinkmas Coquette Bow Tree 11oz Coffee Mug" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Pinkmas Coquette</div>
+        <h3>Pinkmas Bow Tree 11oz Mug</h3>
+        <p>Classic white ceramic mug printed with our blush-bow Christmas tree for winter morning lattes.</p>
+        <a class="card-link" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_11oz_coffee_mug-256760309246942860?rf=238181835450951105" target="_blank" rel="noopener">View Mug on Zazzle &rarr;</a>
       </article>
-      <article class="card">
-        <div>
-          <span class="badge">Home Coffee Bar</span>
-          <h3>Il Portafiltro Retro Espresso 18&times;24 Poster</h3>
-          <p>Mid-century Italian lever espresso machine print in olive green, cream, and terracotta tones.</p>
-        </div>
-        <a href="https://www.zazzle.com/il_portafiltro_retro_italian_espresso_corner_18x24_poster-256119663298023232?rf=238181835450951105" target="_blank" rel="noopener">View Poster on Zazzle &rarr;</a>
+
+      <article class="card" data-cat="holiday apparel">
+        <a class="card-media" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_holiday_shirt-256613549210546971?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/tini-tee.jpg" alt="A Tini Bit Merry Retro Martini Holiday Shirt" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Holiday Cocktail Club</div>
+        <h3>A Tini Bit Merry Martini Shirt</h3>
+        <p>Mid-century olive martini graphic tee with crimson holiday bow and winter holly garnish.</p>
+        <a class="card-link" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_holiday_shirt-256613549210546971?rf=238181835450951105" target="_blank" rel="noopener">View Tee on Zazzle &rarr;</a>
       </article>
-      <article class="card">
-        <div>
-          <span class="badge">Home Baker Gift</span>
-          <h3>Wild Yeast &amp; Wheat Sourdough T-Shirt</h3>
-          <p>Hand-carved woodcut scored boule sourdough loaf on a wooden peel framed by wheat stalks.</p>
-        </div>
-        <a href="https://www.zazzle.com/wild_yeast_and_wheat_sourdough_bakehouse_t_shirt-256398671135712299?rf=238181835450951105" target="_blank" rel="noopener">View Tee on Zazzle &rarr;</a>
+
+      <article class="card" data-cat="holiday mugs">
+        <a class="card-media" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_11oz_mug-256693426679944048?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/tini-mug.jpg" alt="A Tini Bit Merry Retro Martini 11oz Mug" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Holiday Barware</div>
+        <h3>A Tini Bit Merry 11oz Mug</h3>
+        <p>Festive retro cocktail 11oz ceramic mug—ideal for stocking stuffers and holiday hosts.</p>
+        <a class="card-link" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_11oz_mug-256693426679944048?rf=238181835450951105" target="_blank" rel="noopener">View Mug on Zazzle &rarr;</a>
       </article>
-      <article class="card">
-        <div>
-          <span class="badge">Night Owl Gift</span>
-          <h3>Night Shift Social Club Chamomile 11oz Mug</h3>
-          <p>Crescent moon and chamomile floral illustration for nurses, late-night readers, and herbal tea lovers.</p>
-        </div>
-        <a href="https://www.zazzle.com/night_shift_social_club_chamomile_moon_11oz_mug-256198934794123523?rf=238181835450951105" target="_blank" rel="noopener">View Mug on Zazzle &rarr;</a>
+
+      <article class="card" data-cat="holiday">
+        <a class="card-media" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_card-256144319816877027?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/tartan-card.jpg" alt="Tartan Rocking Horse Vintage Christmas Card" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Old Money Holiday</div>
+        <h3>Tartan Rocking Horse Card</h3>
+        <p>Watercolor rocking horse draped in Black Watch tartan with brass bells and cedar wreath.</p>
+        <a class="card-link" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_card-256144319816877027?rf=238181835450951105" target="_blank" rel="noopener">Customize on Zazzle &rarr;</a>
       </article>
-      <article class="card">
-        <div>
-          <span class="badge">Small Business</span>
-          <h3>Meadow &amp; Stem Botanical Florist Card</h3>
-          <p>Editable 3.5&times;2 business card featuring dried wildflowers and vintage brass shears on warm ivory.</p>
-        </div>
-        <a href="https://www.zazzle.com/meadow_and_stem_botanical_florist_studio_business_card-256614486155208326?rf=238181835450951105" target="_blank" rel="noopener">Customize Card &rarr;</a>
+
+      <article class="card" data-cat="holiday">
+        <a class="card-media" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_ornament-256464927123758198?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/tartan-ornament.jpg" alt="Tartan Rocking Horse Ceramic Christmas Ornament" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Tree Keepsake</div>
+        <h3>Tartan Rocking Horse Ornament</h3>
+        <p>Glossy round white ceramic Christmas tree ornament featuring our heirloom tartan rocking horse.</p>
+        <a class="card-link" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_ornament-256464927123758198?rf=238181835450951105" target="_blank" rel="noopener">View Ornament &rarr;</a>
+      </article>
+
+      <article class="card" data-cat="holiday mugs">
+        <a class="card-media" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_11oz_mug-256771995567920169?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/tartan-mug.jpg" alt="Tartan Rocking Horse 11oz Christmas Mug" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Old Money Holiday</div>
+        <h3>Tartan Rocking Horse 11oz Mug</h3>
+        <p>Cozy fireside 11oz ceramic mug featuring our Black Watch tartan equestrian rocking horse.</p>
+        <a class="card-link" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_11oz_mug-256771995567920169?rf=238181835450951105" target="_blank" rel="noopener">View Mug on Zazzle &rarr;</a>
+      </article>
+
+      <article class="card" data-cat="holiday">
+        <a class="card-media" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_wrap_wrapping_paper-256922898737242657?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/tartan-wrap.jpg" alt="Tartan Rocking Horse Wrapping Paper" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Heirloom Gift Wrap</div>
+        <h3>Tartan Rocking Horse Gift Wrap</h3>
+        <p>Seamless repeating tartan rocking horse wrapping paper printed on heavyweight matte or satin rolls.</p>
+        <a class="card-link" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_wrap_wrapping_paper-256922898737242657?rf=238181835450951105" target="_blank" rel="noopener">Shop Gift Wrap &rarr;</a>
+      </article>
+
+      <article class="card" data-cat="stationery">
+        <a class="card-media" href="https://www.zazzle.com/happy_veterans_day_heritage_eagle_woodcut_greeting_card-256800220164454499?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/veterans-card.jpg" alt="Happy Veterans Day Heritage Eagle Woodcut Card" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Patriotic Woodcut</div>
+        <h3>Heritage Eagle Veterans Card</h3>
+        <p>Copperplate woodcut bald eagle perched over an oak-and-laurel wreath reading &ldquo;Honoring All Who Served.&rdquo;</p>
+        <a class="card-link" href="https://www.zazzle.com/happy_veterans_day_heritage_eagle_woodcut_greeting_card-256800220164454499?rf=238181835450951105" target="_blank" rel="noopener">Customize on Zazzle &rarr;</a>
+      </article>
+
+      <article class="card" data-cat="mugs">
+        <a class="card-media" href="https://www.zazzle.com/wheel_thrown_artisan_ceramics_studio_11oz_mug-256335302192274870?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/ceramics-mug.jpg" alt="Kiln and Clay Artisan Ceramics 11oz Mug" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Pottery Studio Gift</div>
+        <h3>Kiln &amp; Clay Ceramics 11oz Mug</h3>
+        <p>Linocut stoneware vases and speckled mug illustration crafted for ceramicists and pottery fans.</p>
+        <a class="card-link" href="https://www.zazzle.com/wheel_thrown_artisan_ceramics_studio_11oz_mug-256335302192274870?rf=238181835450951105" target="_blank" rel="noopener">View Mug on Zazzle &rarr;</a>
+      </article>
+
+      <article class="card" data-cat="apparel">
+        <a class="card-media" href="https://www.zazzle.com/quiet_afternoon_bookshop_and_loose_leaf_tea_t_shirt-256820755168302251?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/bookshop-tee.jpg" alt="Oolong and Paperbacks Bookshop T-Shirt" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Bookish &amp; Tea</div>
+        <h3>Oolong &amp; Paperbacks Tee</h3>
+        <p>Steaming cast-iron teapot, open vintage book, and autumn leaves on soft unisex cotton.</p>
+        <a class="card-link" href="https://www.zazzle.com/quiet_afternoon_bookshop_and_loose_leaf_tea_t_shirt-256820755168302251?rf=238181835450951105" target="_blank" rel="noopener">View Tee on Zazzle &rarr;</a>
+      </article>
+
+      <article class="card" data-cat="stationery">
+        <a class="card-media" href="https://www.zazzle.com/il_portafiltro_retro_italian_espresso_corner_18x24_poster-256119663298023232?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/espresso-poster.jpg" alt="Il Portafiltro Retro Espresso 18x24 Poster" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Home Coffee Bar</div>
+        <h3>Il Portafiltro Espresso Poster</h3>
+        <p>Mid-century Italian lever espresso machine 18&times;24 wall print in olive green, cream, and terracotta.</p>
+        <a class="card-link" href="https://www.zazzle.com/il_portafiltro_retro_italian_espresso_corner_18x24_poster-256119663298023232?rf=238181835450951105" target="_blank" rel="noopener">View Poster on Zazzle &rarr;</a>
+      </article>
+
+      <article class="card" data-cat="apparel">
+        <a class="card-media" href="https://www.zazzle.com/wild_yeast_and_wheat_sourdough_bakehouse_t_shirt-256398671135712299?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/sourdough-tee.jpg" alt="Wild Yeast and Wheat Sourdough T-Shirt" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Home Baker Gift</div>
+        <h3>Wild Yeast &amp; Wheat Tee</h3>
+        <p>Hand-carved woodcut scored boule sourdough loaf on a wooden peel framed by wheat stalks.</p>
+        <a class="card-link" href="https://www.zazzle.com/wild_yeast_and_wheat_sourdough_bakehouse_t_shirt-256398671135712299?rf=238181835450951105" target="_blank" rel="noopener">View Tee on Zazzle &rarr;</a>
+      </article>
+
+      <article class="card" data-cat="mugs">
+        <a class="card-media" href="https://www.zazzle.com/night_shift_social_club_chamomile_moon_11oz_mug-256198934794123523?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/night-shift-mug.jpg" alt="Night Shift Social Club Chamomile 11oz Mug" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Night Owl Gift</div>
+        <h3>Night Shift Chamomile 11oz Mug</h3>
+        <p>Crescent moon and chamomile floral illustration for night shift nurses and late-night tea lovers.</p>
+        <a class="card-link" href="https://www.zazzle.com/night_shift_social_club_chamomile_moon_11oz_mug-256198934794123523?rf=238181835450951105" target="_blank" rel="noopener">View Mug on Zazzle &rarr;</a>
+      </article>
+
+      <article class="card" data-cat="stationery">
+        <a class="card-media" href="https://www.zazzle.com/meadow_and_stem_botanical_florist_studio_business_card-256614486155208326?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/florist-card.jpg" alt="Meadow and Stem Botanical Florist Business Card" loading="lazy" decoding="async" />
+        </a>
+        <div class="badge">Small Business</div>
+        <h3>Meadow &amp; Stem Florist Card</h3>
+        <p>Editable 3.5&times;2 business card featuring dried wildflowers and vintage brass shears on warm ivory.</p>
+        <a class="card-link" href="https://www.zazzle.com/meadow_and_stem_botanical_florist_studio_business_card-256614486155208326?rf=238181835450951105" target="_blank" rel="noopener">Customize Card &rarr;</a>
       </article>
     </div>
   </main>
@@ -283,6 +483,21 @@
   <footer>
     <p>&copy; 2026 GRIMORA11 Studio &bull; <a href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Zazzle Storefront</a> &bull; <a href="https://www.pinterest.com/rafafo1225/" target="_blank" rel="noopener">Pinterest (@rafafo1225)</a></p>
   </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.card');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          const cats = card.dataset.cat.split(' ');
+          card.classList.toggle('hidden', filter !== 'all' && !cats.includes(filter));
+        });
+      });
+    });
+  </script>
 </body>
 </html>
-
