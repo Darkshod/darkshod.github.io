@@ -26,15 +26,15 @@
       });
     })();
   </script>
-  <title>GRIMORA | Winter Elegance, Heirloom Cards &amp; Artisan Essentials</title>
+  <title>GRIMORA | Winter Elegance, Heirloom Apparel &amp; Artisan Essentials</title>
   <link rel="canonical" href="https://darkshod.github.io/" />
-  <meta name="description" content="A quieter season of winter elegance: heirloom holiday cards, artisan ceramic mugs, cozy graphic tees, and luxury keepsake wrapping paper on Zazzle." />
+  <meta name="description" content="A quieter season of winter elegance: heirloom graphic sweatshirts, artisan holiday cards, ceramic mugs, and luxury keepsakes on Zazzle." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      /* Warm Toasted Cashmere & Terracotta Luxury Palette */
+      /* Warm Toasted Cashmere, Almond & Terracotta Luxury Palette */
       --bg: #f5ece1;
       --bg-warm: #ede2d2;
       --bg-card: #e7dbcb;
@@ -101,7 +101,7 @@
     }
     .header-logo {
       font-family: var(--font-brand);
-      font-size: 1.85rem;
+      font-size: 1.9rem;
       font-weight: 600;
       letter-spacing: 0.28em;
       text-transform: uppercase;
@@ -175,7 +175,7 @@
       display: grid;
       grid-template-columns: 1fr 1.05fr;
       align-items: center;
-      min-height: 540px;
+      min-height: 560px;
       box-shadow: 0 12px 36px rgba(45, 30, 20, 0.04);
     }
     .hero-content-col {
@@ -247,10 +247,10 @@
       border-color: var(--accent-terracotta);
     }
 
-    /* Hero Right Visual: High-Quality Un-stretched Photo Showcase */
+    /* Hero Right Visual: High-Quality Real Lifestyle Photo Showcase */
     .hero-gallery-col {
       position: relative;
-      padding: 3rem 3.5rem 3rem 1.5rem;
+      padding: 2.5rem 3.5rem 2.5rem 1.5rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -258,18 +258,19 @@
     .hero-main-frame {
       width: 100%;
       max-width: 440px;
-      aspect-ratio: 4 / 4.7;
+      aspect-ratio: 4 / 5.2;
       border-radius: 4px;
       overflow: hidden;
       background: var(--surface);
       border: 1px solid var(--border);
-      box-shadow: 0 18px 45px rgba(45, 30, 20, 0.1);
+      box-shadow: 0 18px 45px rgba(45, 30, 20, 0.12);
       position: relative;
     }
     .hero-main-frame img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center 20%;
       transition: transform 0.5s ease;
     }
     .hero-main-frame:hover img {
@@ -279,22 +280,22 @@
     /* Floating Overlapping Signature Card */
     .hero-signature-card {
       position: absolute;
-      bottom: 1.5rem;
-      right: 1.8rem;
+      bottom: 1.2rem;
+      right: 1.6rem;
       background: var(--surface);
-      padding: 10px 10px 1.25rem;
+      padding: 10px 10px 1.2rem;
       border-radius: 3px;
-      box-shadow: 0 16px 40px rgba(31, 23, 20, 0.15);
+      box-shadow: 0 16px 40px rgba(31, 23, 20, 0.18);
       border: 1px solid var(--border-subtle);
-      max-width: 230px;
+      max-width: 220px;
       text-align: center;
       z-index: 5;
     }
     .signature-card-photo {
-      aspect-ratio: 1 / 1.1;
+      aspect-ratio: 1 / 1.05;
       overflow: hidden;
       background: var(--bg-card);
-      margin-bottom: 0.85rem;
+      margin-bottom: 0.75rem;
       border-radius: 2px;
     }
     .signature-card-photo img {
@@ -303,7 +304,7 @@
       object-fit: cover;
     }
     .signature-card-title {
-      font-size: 0.68rem;
+      font-size: 0.66rem;
       font-weight: 700;
       letter-spacing: 0.18em;
       text-transform: uppercase;
@@ -313,10 +314,10 @@
     .signature-card-desc {
       font-family: var(--font-serif);
       font-style: italic;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       color: var(--ink-secondary);
       line-height: 1.35;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.7rem;
     }
     .signature-card-link {
       font-size: 0.68rem;
@@ -378,7 +379,7 @@
     .bento-grid {
       display: grid;
       grid-template-columns: 1fr 1.15fr 1fr;
-      grid-template-rows: 280px 280px;
+      grid-template-rows: 290px 290px;
       gap: 1.5rem;
     }
     .bento-card {
@@ -421,7 +422,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(180deg, rgba(31,23,20,0.08) 0%, rgba(31,23,20,0.65) 100%);
+      background: linear-gradient(180deg, rgba(31,23,20,0.05) 0%, rgba(31,23,20,0.7) 100%);
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -569,6 +570,7 @@
       letter-spacing: 0.14em;
       text-transform: uppercase;
       border-radius: 2px;
+      z-index: 2;
     }
     .product-wishlist {
       position: absolute;
@@ -579,6 +581,7 @@
       cursor: pointer;
       font-size: 1.05rem;
       transition: opacity 0.2s ease, transform 0.15s ease;
+      z-index: 2;
     }
     .product-wishlist:hover {
       opacity: 1;
@@ -1060,7 +1063,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "GRIMORA Winter Elegance Collection",
-    "description": "Timeless winter silhouettes, heirloom holiday cards, artisan ceramic mugs, cozy graphic tees, and luxury wrapping paper on Zazzle.",
+    "description": "Timeless winter silhouettes, heirloom graphic sweatshirts, artisan ceramic mugs, holiday cards, and luxury wrapping paper on Zazzle.",
     "url": "https://darkshod.github.io/"
   }
   </script>
@@ -1102,9 +1105,9 @@
     <nav class="header-nav" aria-label="Primary navigation">
       <ul class="header-nav-list">
         <li><a href="#arrivals">New In</a></li>
+        <li><a href="#catalog" data-nav="apparel">Apparel &amp; Sweatshirts</a></li>
         <li><a href="#catalog" data-nav="holiday">Holiday Cards</a></li>
         <li><a href="#catalog" data-nav="mugs">Ceramic Mugs</a></li>
-        <li><a href="#catalog" data-nav="apparel">Apparel</a></li>
         <li><a href="#catalog" data-nav="stationery">Stationery &amp; Wrap</a></li>
         <li><a href="/blog.html">Journal</a></li>
         <li><a href="#editorial">Our World</a></li>
@@ -1112,7 +1115,7 @@
     </nav>
   </header>
 
-  <!-- Hero Section: "Winter Elegance" (Clean High-Resolution Showcase) -->
+  <!-- Hero Section: "Winter Elegance" (Showcasing Real Luxury Lifestyle Model Photography) -->
   <section class="hero-container">
     <div class="hero-editorial-card">
       <div class="hero-content-col">
@@ -1126,19 +1129,19 @@
       </div>
 
       <div class="hero-gallery-col">
-        <!-- Main high-res lifestyle frame (crisp, properly proportioned) -->
+        <!-- Main high-res lifestyle frame: Luxury Model on Yacht Deck in Black Merry Christmas Sweatshirt -->
         <div class="hero-main-frame">
-          <img src="./images/pinkmas-card.jpg" alt="Winter Elegance Pinkmas Coquette Bow Tree 5x7 Card" loading="eager" />
+          <img src="./images/hero-model-yacht.jpg" alt="Winter Elegance Model in Black Merry Christmas Nativity Sweatshirt" loading="eager" />
         </div>
 
-        <!-- Overlapping floating signature card -->
+        <!-- Overlapping floating signature card: Red Nativity Sweatshirt Flatlay -->
         <div class="hero-signature-card">
           <div class="signature-card-photo">
-            <img src="./images/tartan-card.jpg" alt="The Signature Tartan Rocking Horse Card" loading="eager" />
+            <img src="./images/red-christmas-sweatshirt.jpg" alt="The Signature Nativity Sweatshirt" loading="eager" />
           </div>
-          <div class="signature-card-title">The Signature Keepsake</div>
+          <div class="signature-card-title">The Signature Sweatshirt</div>
           <div class="signature-card-desc">&ldquo;A modern classic, made for every winter ahead.&rdquo;</div>
-          <a class="signature-card-link" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_card-256144319816877027?rf=238181835450951105" target="_blank" rel="noopener">Discover Now &rarr;</a>
+          <a class="signature-card-link" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Discover Now &rarr;</a>
         </div>
       </div>
     </div>
@@ -1181,7 +1184,7 @@
         </svg>
         <div class="value-text">
           <h4>Thoughtfully Sourced</h4>
-          <p>Archival papers, enduring ceramics</p>
+          <p>Heavyweight fleece, archival papers</p>
         </div>
       </div>
 
@@ -1197,17 +1200,17 @@
     </div>
   </section>
 
-  <!-- Editorial Bento Mosaic (Color & Contrast Grid) -->
+  <!-- Editorial Bento Mosaic (Featuring High-Res Lifestyle Imagery) -->
   <section class="bento-section">
     <div class="bento-grid">
 
-      <!-- Bento 1: Tall Left (Winter Apparel) -->
+      <!-- Bento 1: Tall Left (Model on Yacht with Martini Sweatshirt) -->
       <div class="bento-card bento-tall-left">
-        <img src="./images/tini-tee.jpg" alt="Winter Graphic Apparel" loading="lazy" />
+        <img src="./images/martini-yacht-lifestyle.jpg" alt="Model in Not Wealthy Just Well-Seasoned Sweatshirt on Yacht" loading="lazy" />
         <div class="bento-overlay">
           <div class="bento-title-caps">Winter<br />Apparel</div>
-          <div class="bento-desc">Iconic cozy layers for colder days.</div>
-          <a class="bento-link" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_holiday_shirt-256613549210546971?rf=238181835450951105" target="_blank" rel="noopener">Shop Apparel &rarr;</a>
+          <div class="bento-desc">Iconic cozy fleece layers for colder days.</div>
+          <a class="bento-link" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Shop Apparel &rarr;</a>
         </div>
       </div>
 
@@ -1222,7 +1225,7 @@
         </div>
       </div>
 
-      <!-- Bento 3: Bottom Mid (Elevated Accessories & Keepsakes) -->
+      <!-- Bento 3: Bottom Mid (Elevated Keepsakes & Tree Decor) -->
       <div class="bento-card bento-bot-mid">
         <img src="./images/tartan-ornament.jpg" alt="Elevated Keepsakes & Tree Decor" loading="lazy" />
         <div class="bento-overlay bento-warm-peach">
@@ -1247,7 +1250,7 @@
     </div>
   </section>
 
-  <!-- New Arrivals: 5-Card Product Showcase (Warm & Crisp) -->
+  <!-- New Arrivals: 5-Card Product Showcase (Showcasing New High-Quality Sweatshirts & Heirlooms) -->
   <section id="arrivals" class="arrivals-section">
     <div class="arrivals-header">
       <h2>New Arrivals</h2>
@@ -1255,7 +1258,71 @@
     </div>
 
     <div class="arrivals-grid">
-      <!-- Item 1: Pinkmas Card -->
+      <!-- Item 1: Red Christmas Nativity Sweatshirt -->
+      <div class="product-card">
+        <a class="product-photo-wrap" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">
+          <span class="product-badge-new">New</span>
+          <span class="product-wishlist" title="Save">&#9825;</span>
+          <img src="./images/red-christmas-sweatshirt.jpg" alt="The Nativity Heirloom Crewneck Sweatshirt" loading="lazy" />
+        </a>
+        <div class="product-name">The Nativity Heirloom Sweatshirt</div>
+        <div class="product-price">$38.00</div>
+        <div class="product-swatches">
+          <span class="swatch-dot" style="background:#b82a28;"></span>
+          <span class="swatch-dot" style="background:#221e1c;"></span>
+          <span class="swatch-dot" style="background:#f4ece1;"></span>
+        </div>
+      </div>
+
+      <!-- Item 2: Not Wealthy Just Well-Seasoned Martini Sweatshirt -->
+      <div class="product-card">
+        <a class="product-photo-wrap" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">
+          <span class="product-badge-new">New</span>
+          <span class="product-wishlist" title="Save">&#9825;</span>
+          <img src="./images/martini-sweatshirt-flatlay.jpg" alt="The Well-Seasoned Martini Sweatshirt" loading="lazy" />
+        </a>
+        <div class="product-name">The Well-Seasoned Martini Sweatshirt</div>
+        <div class="product-price">$38.00</div>
+        <div class="product-swatches">
+          <span class="swatch-dot" style="background:#f0ebe3;"></span>
+          <span class="swatch-dot" style="background:#221e1c;"></span>
+          <span class="swatch-dot" style="background:#8f9b88;"></span>
+        </div>
+      </div>
+
+      <!-- Item 3: Venice Italy Rialto Bridge Sweatshirt -->
+      <div class="product-card">
+        <a class="product-photo-wrap" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">
+          <span class="product-badge-new">New</span>
+          <span class="product-wishlist" title="Save">&#9825;</span>
+          <img src="./images/venice-sweatshirt-flatlay.jpg" alt="The Venice Rialto Woodcut Sweatshirt" loading="lazy" />
+        </a>
+        <div class="product-name">The Venice Rialto Woodcut Sweatshirt</div>
+        <div class="product-price">$38.00</div>
+        <div class="product-swatches">
+          <span class="swatch-dot" style="background:#efe9e0;"></span>
+          <span class="swatch-dot" style="background:#1b3b5b;"></span>
+          <span class="swatch-dot" style="background:#221e1c;"></span>
+        </div>
+      </div>
+
+      <!-- Item 4: Tartan Rocking Horse Mug -->
+      <div class="product-card">
+        <a class="product-photo-wrap" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_11oz_mug-256771995567920169?rf=238181835450951105" target="_blank" rel="noopener">
+          <span class="product-badge-new">New</span>
+          <span class="product-wishlist" title="Save">&#9825;</span>
+          <img src="./images/tartan-mug.jpg" alt="The Tartan Rocking Horse 11oz Mug" loading="lazy" />
+        </a>
+        <div class="product-name">The Tartan Rocking Horse Mug</div>
+        <div class="product-price">$18.95</div>
+        <div class="product-swatches">
+          <span class="swatch-dot" style="background:#f8f6f0;"></span>
+          <span class="swatch-dot" style="background:#1d2922;"></span>
+          <span class="swatch-dot" style="background:#9e5332;"></span>
+        </div>
+      </div>
+
+      <!-- Item 5: Pinkmas Coquette Bow Tree Card -->
       <div class="product-card">
         <a class="product-photo-wrap" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_christmas_card-256802400221516860?rf=238181835450951105" target="_blank" rel="noopener">
           <span class="product-badge-new">New</span>
@@ -1270,69 +1337,6 @@
           <span class="swatch-dot" style="background:#9e5332;"></span>
         </div>
       </div>
-
-      <!-- Item 2: Tartan Mug -->
-      <div class="product-card">
-        <a class="product-photo-wrap" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_11oz_mug-256771995567920169?rf=238181835450951105" target="_blank" rel="noopener">
-          <span class="product-badge-new">New</span>
-          <span class="product-wishlist" title="Save">&#9825;</span>
-          <img src="./images/tartan-mug.jpg" alt="The Tartan Rocking Horse Mug" loading="lazy" />
-        </a>
-        <div class="product-name">The Tartan Rocking Horse Mug</div>
-        <div class="product-price">$18.95</div>
-        <div class="product-swatches">
-          <span class="swatch-dot" style="background:#f8f6f0;"></span>
-          <span class="swatch-dot" style="background:#1d2922;"></span>
-          <span class="swatch-dot" style="background:#9e5332;"></span>
-        </div>
-      </div>
-
-      <!-- Item 3: Tini Martini Tee -->
-      <div class="product-card">
-        <a class="product-photo-wrap" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_holiday_shirt-256613549210546971?rf=238181835450951105" target="_blank" rel="noopener">
-          <span class="product-badge-new">New</span>
-          <span class="product-wishlist" title="Save">&#9825;</span>
-          <img src="./images/tini-tee.jpg" alt="The Retro Martini Holiday Tee" loading="lazy" />
-        </a>
-        <div class="product-name">The Retro Martini Holiday Tee</div>
-        <div class="product-price">$24.50</div>
-        <div class="product-swatches">
-          <span class="swatch-dot" style="background:#f3ece2;"></span>
-          <span class="swatch-dot" style="background:#3a4b3d;"></span>
-          <span class="swatch-dot" style="background:#221e1c;"></span>
-        </div>
-      </div>
-
-      <!-- Item 4: Tartan Ornament -->
-      <div class="product-card">
-        <a class="product-photo-wrap" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_ornament-256464927123758198?rf=238181835450951105" target="_blank" rel="noopener">
-          <span class="product-badge-new">New</span>
-          <span class="product-wishlist" title="Save">&#9825;</span>
-          <img src="./images/tartan-ornament.jpg" alt="The Tartan Rocking Horse Ceramic Ornament" loading="lazy" />
-        </a>
-        <div class="product-name">The Tartan Ceramic Keepsake</div>
-        <div class="product-price">$16.95</div>
-        <div class="product-swatches">
-          <span class="swatch-dot" style="background:#f7f6f2;"></span>
-          <span class="swatch-dot" style="background:#c2924a;"></span>
-        </div>
-      </div>
-
-      <!-- Item 5: Sourdough Bakehouse Tee -->
-      <div class="product-card">
-        <a class="product-photo-wrap" href="https://www.zazzle.com/wild_yeast_and_wheat_sourdough_bakehouse_t_shirt-256398671135712299?rf=238181835450951105" target="_blank" rel="noopener">
-          <span class="product-badge-new">New</span>
-          <span class="product-wishlist" title="Save">&#9825;</span>
-          <img src="./images/sourdough-tee.jpg" alt="The Wild Yeast & Wheat Tee" loading="lazy" />
-        </a>
-        <div class="product-name">The Wild Yeast &amp; Wheat Tee</div>
-        <div class="product-price">$24.50</div>
-        <div class="product-swatches">
-          <span class="swatch-dot" style="background:#e8dfd3;"></span>
-          <span class="swatch-dot" style="background:#221e1c;"></span>
-          <span class="swatch-dot" style="background:#9e5332;"></span>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -1341,19 +1345,58 @@
     <div class="catalog-filter-bar">
       <div class="catalog-filter-tabs">
         <button class="cat-btn active" data-filter="all" type="button">All Creations</button>
+        <button class="cat-btn" data-filter="apparel" type="button">Apparel</button>
         <button class="cat-btn" data-filter="holiday" type="button">Holiday</button>
         <button class="cat-btn" data-filter="mugs" type="button">Ceramic Mugs</button>
-        <button class="cat-btn" data-filter="apparel" type="button">Apparel</button>
         <button class="cat-btn" data-filter="stationery" type="button">Stationery &amp; Prints</button>
       </div>
       <div style="font-size:0.82rem;font-weight:600;color:var(--accent-terracotta);">
-        12 Curated Heirlooms
+        15 Curated Heirlooms
       </div>
     </div>
 
     <div class="grid-extra">
 
-      <!-- Product 1 -->
+      <!-- Product 1: Red Christmas Sweatshirt -->
+      <article class="catalog-card" data-cat="apparel holiday">
+        <a class="catalog-photo" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/red-christmas-sweatshirt.jpg" alt="Nativity Christmas Crewneck Sweatshirt" loading="lazy" />
+        </a>
+        <h3>Nativity Christmas Sweatshirt</h3>
+        <p>Heavyweight fleece crewneck featuring our original Merry Christmas woodcut nativity engraving.</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$38.00</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Customize &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Product 2: Martini Sweatshirt -->
+      <article class="catalog-card" data-cat="apparel holiday">
+        <a class="catalog-photo" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/martini-sweatshirt-flatlay.jpg" alt="Not Wealthy Just Well-Seasoned Martini Sweatshirt" loading="lazy" />
+        </a>
+        <h3>Well-Seasoned Martini Sweatshirt</h3>
+        <p>Relaxed luxury oatmeal sweatshirt with watercolor dirty martini &ldquo;Not Wealthy. Just Well-Seasoned.&rdquo;</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$38.00</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Customize &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Product 3: Venice Sweatshirt -->
+      <article class="catalog-card" data-cat="apparel">
+        <a class="catalog-photo" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/venice-sweatshirt-flatlay.jpg" alt="Venice Italy Rialto Bridge Sweatshirt" loading="lazy" />
+        </a>
+        <h3>Venice Rialto Bridge Sweatshirt</h3>
+        <p>Classic vintage Italian architectural print featuring the Rialto Bridge and gondolier on soft ivory cotton.</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$38.00</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Customize &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Product 4: Pinkmas Card -->
       <article class="catalog-card" data-cat="holiday">
         <a class="catalog-photo" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_christmas_card-256802400221516860?rf=238181835450951105" target="_blank" rel="noopener">
           <img src="./images/pinkmas-card.jpg" alt="Pinkmas Coquette Bow Tree Card" loading="lazy" />
@@ -1366,7 +1409,7 @@
         </div>
       </article>
 
-      <!-- Product 2 -->
+      <!-- Product 5: Pinkmas Mug -->
       <article class="catalog-card" data-cat="holiday mugs">
         <a class="catalog-photo" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_11oz_coffee_mug-256760309246942860?rf=238181835450951105" target="_blank" rel="noopener">
           <img src="./images/pinkmas-mug.jpg" alt="Pinkmas Coquette Bow Tree 11oz Mug" loading="lazy" />
@@ -1379,7 +1422,7 @@
         </div>
       </article>
 
-      <!-- Product 3 -->
+      <!-- Product 6: Tini Tee -->
       <article class="catalog-card" data-cat="holiday apparel">
         <a class="catalog-photo" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_holiday_shirt-256613549210546971?rf=238181835450951105" target="_blank" rel="noopener">
           <img src="./images/tini-tee.jpg" alt="A Tini Bit Merry Retro Martini Shirt" loading="lazy" />
@@ -1392,7 +1435,7 @@
         </div>
       </article>
 
-      <!-- Product 4 -->
+      <!-- Product 7: Tini Mug -->
       <article class="catalog-card" data-cat="holiday mugs">
         <a class="catalog-photo" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_11oz_mug-256693426679944048?rf=238181835450951105" target="_blank" rel="noopener">
           <img src="./images/tini-mug.jpg" alt="A Tini Bit Merry Retro Martini Mug" loading="lazy" />
@@ -1405,7 +1448,7 @@
         </div>
       </article>
 
-      <!-- Product 5 -->
+      <!-- Product 8: Tartan Card -->
       <article class="catalog-card" data-cat="holiday">
         <a class="catalog-photo" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_card-256144319816877027?rf=238181835450951105" target="_blank" rel="noopener">
           <img src="./images/tartan-card.jpg" alt="Tartan Rocking Horse Vintage Christmas Card" loading="lazy" />
@@ -1418,7 +1461,7 @@
         </div>
       </article>
 
-      <!-- Product 6 -->
+      <!-- Product 9: Tartan Ornament -->
       <article class="catalog-card" data-cat="holiday">
         <a class="catalog-photo" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_ornament-256464927123758198?rf=238181835450951105" target="_blank" rel="noopener">
           <img src="./images/tartan-ornament.jpg" alt="Tartan Rocking Horse Ceramic Ornament" loading="lazy" />
@@ -1431,7 +1474,7 @@
         </div>
       </article>
 
-      <!-- Product 7 -->
+      <!-- Product 10: Tartan Mug -->
       <article class="catalog-card" data-cat="holiday mugs">
         <a class="catalog-photo" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_11oz_mug-256771995567920169?rf=238181835450951105" target="_blank" rel="noopener">
           <img src="./images/tartan-mug.jpg" alt="Tartan Rocking Horse 11oz Christmas Mug" loading="lazy" />
@@ -1444,7 +1487,7 @@
         </div>
       </article>
 
-      <!-- Product 8 -->
+      <!-- Product 11: Tartan Wrap -->
       <article class="catalog-card" data-cat="holiday">
         <a class="catalog-photo" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_wrap_wrapping_paper-256922898737242657?rf=238181835450951105" target="_blank" rel="noopener">
           <img src="./images/tartan-wrap.jpg" alt="Tartan Rocking Horse Wrapping Paper" loading="lazy" />
@@ -1457,7 +1500,7 @@
         </div>
       </article>
 
-      <!-- Product 9 -->
+      <!-- Product 12: Ceramics Mug -->
       <article class="catalog-card" data-cat="mugs">
         <a class="catalog-photo" href="https://www.zazzle.com/wheel_thrown_artisan_ceramics_studio_11oz_mug-256335302192274870?rf=238181835450951105" target="_blank" rel="noopener">
           <img src="./images/ceramics-mug.jpg" alt="Kiln & Clay Ceramics 11oz Mug" loading="lazy" />
@@ -1470,7 +1513,7 @@
         </div>
       </article>
 
-      <!-- Product 10 -->
+      <!-- Product 13: Bookshop Tee -->
       <article class="catalog-card" data-cat="apparel">
         <a class="catalog-photo" href="https://www.zazzle.com/quiet_afternoon_bookshop_and_loose_leaf_tea_t_shirt-256820755168302251?rf=238181835450951105" target="_blank" rel="noopener">
           <img src="./images/bookshop-tee.jpg" alt="Oolong & Paperbacks Bookshop Tee" loading="lazy" />
@@ -1483,7 +1526,7 @@
         </div>
       </article>
 
-      <!-- Product 11 -->
+      <!-- Product 14: Espresso Poster -->
       <article class="catalog-card" data-cat="stationery">
         <a class="catalog-photo" href="https://www.zazzle.com/il_portafiltro_retro_italian_espresso_corner_18x24_poster-256119663298023232?rf=238181835450951105" target="_blank" rel="noopener">
           <img src="./images/espresso-poster.jpg" alt="Il Portafiltro Retro Espresso Poster" loading="lazy" />
@@ -1496,7 +1539,7 @@
         </div>
       </article>
 
-      <!-- Product 12 -->
+      <!-- Product 15: Sourdough Tee -->
       <article class="catalog-card" data-cat="apparel">
         <a class="catalog-photo" href="https://www.zazzle.com/wild_yeast_and_wheat_sourdough_bakehouse_t_shirt-256398671135712299?rf=238181835450951105" target="_blank" rel="noopener">
           <img src="./images/sourdough-tee.jpg" alt="Wild Yeast and Wheat Sourdough Tee" loading="lazy" />
@@ -1512,11 +1555,11 @@
     </div>
   </section>
 
-  <!-- Full-Bleed Warm Statement Banner: "A Brighter Kinder Winter" -->
+  <!-- Full-Bleed Warm Statement Banner: "A Brighter Kinder Winter" (Featuring Luxury Lifestyle Photo) -->
   <section id="editorial" class="editorial-statement-section">
     <div class="editorial-statement-card">
       <div class="statement-visual-wrap">
-        <img src="./images/tartan-wrap.jpg" alt="A Brighter Kinder Winter" loading="lazy" />
+        <img src="./images/martini-yacht-lifestyle.jpg" alt="A Brighter Kinder Winter Luxury Mediterranean Lifestyle" loading="lazy" />
       </div>
 
       <div class="statement-textbox">
@@ -1595,9 +1638,9 @@
         <div class="footer-col">
           <h4>Collections</h4>
           <ul class="footer-links-col">
+            <li><a href="#catalog" data-nav="apparel">Apparel &amp; Sweatshirts</a></li>
             <li><a href="#catalog" data-nav="holiday">Holiday Cards</a></li>
             <li><a href="#catalog" data-nav="mugs">Artisan Mugs</a></li>
-            <li><a href="#catalog" data-nav="apparel">Winter Graphic Tees</a></li>
             <li><a href="#catalog" data-nav="stationery">Ceramic Ornaments</a></li>
             <li><a href="#catalog" data-nav="stationery">Luxury Gift Wrap</a></li>
           </ul>
