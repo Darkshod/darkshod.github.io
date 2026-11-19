@@ -26,39 +26,35 @@
       });
     })();
   </script>
-  <title>GRIMORA11 | Heirloom Holiday Cards, Artisan Mugs &amp; Cozy Graphic Tees</title>
+  <title>LUMIÈRE GRIMORA | Winter Elegance, Heirloom Cards &amp; Artisan Essentials</title>
   <link rel="canonical" href="https://darkshod.github.io/" />
-  <meta name="description" content="Curated US gift guide by GRIMORA11: Pinkmas coquette holiday cards, Old Money tartan ornaments, retro martini gifts, artisan ceramic mugs, and cozy graphic tees on Zazzle." />
+  <meta name="description" content="A quieter season of winter elegance: heirloom holiday cards, artisan ceramic mugs, cozy graphic tees, and luxury keepsake wrapping paper on Zazzle." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #fbf8f3;
-      --bg-warm: #f6f2ea;
+      --bg: #fcfbf9;
+      --bg-warm: #f7f5f0;
+      --bg-card: #f2eee8;
       --surface: #ffffff;
-      --ink: #162820;
-      --ink-muted: #5e6b63;
-      --forest: #162820;
-      --forest-hover: #0f1c16;
-      --forest-dark: #11231a;
-      --forest-card: #182e24;
-      --pill-bg: #ece5da;
-      --pill-dot: #8c7355;
-      --border: #e9e3d8;
-      --border-subtle: rgba(22, 40, 32, 0.08);
-      --shadow-subtle: 0 10px 30px rgba(22, 40, 32, 0.04);
-      --shadow-hover: 0 18px 45px rgba(22, 40, 32, 0.09);
-      --shadow-float: 0 20px 50px rgba(22, 40, 32, 0.08);
-      --radius-sm: 8px;
-      --radius-md: 16px;
-      --radius-lg: 24px;
-      --radius-pill: 999px;
+      --ink: #221e1c;
+      --ink-secondary: #6e675f;
+      --ink-muted: #958d83;
+      --accent-dark: #221e1c;
+      --accent-dark-hover: #3d3734;
+      --border: #e9e4dc;
+      --border-subtle: #eeeae2;
+      --badge-bg: rgba(255, 255, 255, 0.92);
+      --font-brand: "Cinzel", Georgia, serif;
+      --font-serif: "Playfair Display", Georgia, serif;
+      --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
     }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
-      font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: var(--font-sans);
       background: var(--bg);
       color: var(--ink);
       line-height: 1.6;
@@ -68,908 +64,917 @@
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
 
-    /* Top Navigation (Havenly Style) */
-    .navbar {
-      background: rgba(251, 248, 243, 0.94);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border-subtle);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      transition: background 0.3s ease;
-    }
-    .navbar-container {
-      max-width: 1240px;
+    /* Top Utility Header */
+    .header-top {
+      max-width: 1360px;
       margin: 0 auto;
-      padding: 1.15rem 2rem;
-      display: flex;
+      padding: 1.25rem 2.2rem 0.8rem;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
       align-items: center;
-      justify-content: space-between;
       gap: 1.5rem;
     }
-    .nav-brand {
+    .header-search {
       display: flex;
       align-items: center;
       gap: 0.65rem;
-      font-family: "Playfair Display", Georgia, serif;
-      font-size: 1.6rem;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-      color: var(--forest);
+      color: var(--ink-muted);
+      font-size: 0.82rem;
+      max-width: 220px;
     }
-    .brand-icon {
-      width: 24px;
-      height: 24px;
-      color: var(--forest);
+    .header-search input {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      color: var(--ink);
+      width: 100%;
     }
-    .nav-menu {
+    .header-search input::placeholder {
+      color: var(--ink-muted);
+    }
+    .header-logo {
+      font-family: var(--font-brand);
+      font-size: 1.7rem;
+      font-weight: 500;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--ink);
+      text-align: center;
+    }
+    .header-actions {
       display: flex;
       align-items: center;
-      gap: 2.2rem;
-      list-style: none;
-    }
-    .nav-menu a {
-      font-size: 0.92rem;
+      justify-content: flex-end;
+      gap: 1.4rem;
+      font-size: 0.78rem;
       font-weight: 500;
-      color: var(--ink-muted);
-      position: relative;
-      padding-bottom: 4px;
+      letter-spacing: 0.08em;
+      color: var(--ink-secondary);
+    }
+    .header-actions a:hover, .header-actions span:hover {
+      color: var(--ink);
+    }
+    .header-icon {
+      width: 18px;
+      height: 18px;
+      stroke-width: 1.6;
+      color: var(--ink);
+    }
+
+    /* Main Navigation Menu */
+    .header-nav {
+      border-bottom: 1px solid var(--border);
+      padding: 0.85rem 2rem 1.15rem;
+      margin-bottom: 2rem;
+    }
+    .header-nav-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2.4rem;
+      list-style: none;
+      font-size: 0.76rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-secondary);
+    }
+    .header-nav-list a {
       transition: color 0.2s ease;
+      padding-bottom: 2px;
     }
-    .nav-menu a:hover {
-      color: var(--forest);
+    .header-nav-list a:hover {
+      color: var(--ink);
+      border-bottom: 1px solid var(--ink);
     }
-    .nav-menu a.active {
-      color: var(--forest);
-      font-weight: 600;
+
+    /* Hero Section: Winter Elegance */
+    .hero-container {
+      max-width: 1360px;
+      margin: 0 auto 3rem;
+      padding: 0 2rem;
     }
-    .nav-menu a.active::after {
-      content: "";
+    .hero-editorial-card {
+      position: relative;
+      background: var(--bg-warm);
+      border-radius: 4px;
+      overflow: hidden;
+      min-height: 580px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+    }
+    .hero-bg-visual {
       position: absolute;
-      bottom: 0;
+      top: 0;
       left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--forest);
-      border-radius: 2px;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
     }
-    .nav-action .btn-nav {
+    .hero-bg-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      opacity: 0.94;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(247,245,240,0.92) 0%, rgba(247,245,240,0.72) 42%, rgba(247,245,240,0.15) 100%);
+      z-index: 2;
+    }
+    .hero-textbox {
+      position: relative;
+      z-index: 3;
+      padding: 4.5rem 3.5rem;
+      max-width: 540px;
+    }
+    .hero-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-secondary);
+      margin-bottom: 1.4rem;
+      display: block;
+    }
+    .hero-textbox h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(3rem, 5vw, 4.4rem);
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      line-height: 1.05;
+      text-transform: uppercase;
+      color: var(--ink);
+      margin-bottom: 1.4rem;
+    }
+    .hero-textbox p {
+      font-size: 0.98rem;
+      line-height: 1.65;
+      color: var(--ink-secondary);
+      margin-bottom: 2.2rem;
+      max-width: 380px;
+    }
+    .btn-dark-editorial {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      background: var(--forest);
+      gap: 0.65rem;
+      background: var(--accent-dark);
       color: #ffffff;
-      padding: 0.65rem 1.45rem;
-      border-radius: var(--radius-pill);
-      font-size: 0.88rem;
+      padding: 0.95rem 2rem;
+      font-size: 0.74rem;
       font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
       transition: background 0.2s ease, transform 0.15s ease;
     }
-    .nav-action .btn-nav:hover {
-      background: var(--forest-hover);
+    .btn-dark-editorial:hover {
+      background: var(--accent-dark-hover);
       transform: translateY(-1px);
     }
 
-    /* Common Pill Badges */
-    .pill-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.55rem;
-      background: var(--pill-bg);
-      color: var(--pill-text);
-      padding: 0.45rem 1rem;
-      border-radius: var(--radius-pill);
-      font-size: 0.82rem;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      margin-bottom: 1.15rem;
-    }
-    .pill-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--pill-dot);
-    }
-
-    /* Hero Section (Havenly Architecture Style) */
-    .hero-section {
-      max-width: 1240px;
-      margin: 0 auto;
-      padding: 3.5rem 2rem 5rem;
-      display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      gap: 3.5rem;
-      align-items: center;
+    /* Right Floating Feature Card (Lumière Signature) */
+    .hero-floating-card-wrap {
       position: relative;
-    }
-    .hero-content h1 {
-      font-family: "Playfair Display", Georgia, serif;
-      font-size: clamp(2.8rem, 4.8vw, 4.2rem);
-      font-weight: 500;
-      line-height: 1.1;
-      letter-spacing: -0.025em;
-      color: var(--forest);
-      margin-bottom: 1.35rem;
-    }
-    .hero-content p {
-      font-size: 1.08rem;
-      line-height: 1.65;
-      color: var(--ink-muted);
-      max-width: 480px;
-      margin-bottom: 2.2rem;
-    }
-    .hero-buttons {
+      z-index: 3;
       display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1.1rem;
+      justify-content: flex-end;
+      padding: 3rem 3.5rem 3rem 0;
     }
-    .btn-pill-dark {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      background: var(--forest);
-      color: #ffffff;
-      padding: 0.85rem 1.85rem;
-      border-radius: var(--radius-pill);
-      font-size: 0.94rem;
-      font-weight: 600;
-      transition: background 0.2s ease, transform 0.15s ease;
+    .hero-signature-card {
+      background: var(--surface);
+      padding: 12px 12px 1.4rem;
+      border-radius: 2px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+      max-width: 280px;
+      text-align: center;
     }
-    .btn-pill-dark:hover {
-      background: var(--forest-hover);
-      transform: translateY(-2px);
-    }
-    .btn-pill-video {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      background: transparent;
-      color: var(--forest);
-      padding: 0.85rem 1.4rem;
-      font-size: 0.94rem;
-      font-weight: 600;
-      transition: opacity 0.2s ease;
-    }
-    .play-circle {
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      background: #eadecd;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--forest);
-      font-size: 0.82rem;
-      padding-left: 2px;
-      transition: transform 0.2s ease;
-    }
-    .btn-pill-video:hover .play-circle {
-      transform: scale(1.08);
-    }
-
-    /* Hero Visual Showcase */
-    .hero-gallery {
-      position: relative;
-    }
-    .hero-img-main {
-      border-radius: var(--radius-lg);
+    .signature-card-photo {
+      aspect-ratio: 4 / 4.8;
       overflow: hidden;
-      box-shadow: var(--shadow-float);
-      aspect-ratio: 16 / 11;
-      background: #e7dfd4;
+      background: var(--bg-card);
+      margin-bottom: 1.1rem;
     }
-    .hero-img-main img {
+    .signature-card-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .hero-signature-card:hover .signature-card-photo img {
+      transform: scale(1.03);
+    }
+    .signature-card-title {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink);
+      margin-bottom: 0.35rem;
+    }
+    .signature-card-desc {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 0.88rem;
+      color: var(--ink-secondary);
+      line-height: 1.4;
+      margin-bottom: 0.85rem;
+    }
+    .signature-card-link {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink);
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 2px;
+      display: inline-block;
+    }
+
+    /* Value Propositions Banner */
+    .value-banner {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+      margin-bottom: 3.5rem;
+    }
+    .value-banner-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    .value-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .value-icon {
+      width: 24px;
+      height: 24px;
+      stroke-width: 1.5;
+      color: var(--ink);
+      flex-shrink: 0;
+    }
+    .value-text h4 {
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink);
+      margin-bottom: 0.15rem;
+    }
+    .value-text p {
+      font-size: 0.8rem;
+      color: var(--ink-secondary);
+    }
+
+    /* Bento / Editorial Category Mosaic */
+    .bento-section {
+      max-width: 1360px;
+      margin: 0 auto 4.5rem;
+      padding: 0 2rem;
+    }
+    .bento-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr 1fr;
+      grid-template-rows: 270px 270px;
+      gap: 1.5rem;
+    }
+    .bento-card {
+      position: relative;
+      overflow: hidden;
+      background: var(--bg-card);
+      border-radius: 2px;
+    }
+    .bento-card img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform 0.5s ease;
     }
-    .hero-img-main:hover img {
-      transform: scale(1.03);
+    .bento-card:hover img {
+      transform: scale(1.04);
+    }
+    .bento-tall-left {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    }
+    .bento-tall-right {
+      grid-column: 3 / 4;
+      grid-row: 1 / 3;
+    }
+    .bento-top-mid {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+    .bento-bot-mid {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
     }
 
-    /* Floating Pill Search / Filter Bar (Havenly Style) */
-    .floating-filter-container {
-      max-width: 1080px;
-      margin: -2.8rem auto 4.5rem;
-      padding: 0 1.5rem;
-      position: relative;
-      z-index: 30;
-    }
-    .floating-filter-bar {
-      background: #ffffff;
-      border-radius: var(--radius-pill);
-      padding: 0.75rem 0.9rem 0.75rem 2.2rem;
-      box-shadow: 0 16px 45px rgba(22, 40, 32, 0.08);
-      border: 1px solid rgba(230, 224, 214, 0.95);
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr auto;
-      align-items: center;
-      gap: 1.5rem;
-    }
-    .filter-segment {
-      display: flex;
-      align-items: center;
-      gap: 0.85rem;
-      padding-right: 1.25rem;
-      border-right: 1px solid #ebe4d8;
-    }
-    .filter-segment-icon {
-      color: var(--forest);
-      opacity: 0.8;
-      display: flex;
-      align-items: center;
-    }
-    .filter-segment-text {
-      display: flex;
-      flex-direction: column;
-    }
-    .filter-label {
-      font-size: 0.72rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #8c8278;
-    }
-    .filter-select {
-      border: none;
-      background: transparent;
-      font-family: inherit;
-      font-size: 0.92rem;
-      font-weight: 600;
-      color: var(--forest);
-      cursor: pointer;
-      outline: none;
-      padding-top: 2px;
-    }
-    .filter-search-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.65rem;
-      background: var(--forest);
-      color: #ffffff;
-      border: none;
-      border-radius: var(--radius-pill);
-      padding: 0.95rem 2rem;
-      font-size: 0.95rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.2s ease, transform 0.15s ease;
-    }
-    .filter-search-btn:hover {
-      background: var(--forest-hover);
-      transform: translateY(-1px);
-    }
-
-    /* Section: "More Than Just..." (About / Trust Architecture) */
-    .section-about {
-      max-width: 1240px;
-      margin: 0 auto 5.5rem;
-      padding: 0 2rem;
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 4.5rem;
-      align-items: center;
-    }
-    .about-visual {
-      position: relative;
-    }
-    .about-arch-frame {
-      border-radius: 140px 24px 24px 24px;
-      overflow: hidden;
-      aspect-ratio: 4 / 4.8;
-      box-shadow: var(--shadow-float);
-      background: #eae3d7;
-    }
-    .about-arch-frame img {
+    /* Text Overlays in Bento Cards */
+    .bento-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;
-    }
-    .about-body h2 {
-      font-family: "Playfair Display", Georgia, serif;
-      font-size: clamp(2.3rem, 3.8vw, 3.2rem);
-      font-weight: 500;
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      color: var(--forest);
-      margin-bottom: 1.25rem;
-    }
-    .about-body p {
-      font-size: 1.02rem;
-      line-height: 1.7;
-      color: var(--ink-muted);
-      margin-bottom: 1.8rem;
-      max-width: 580px;
-    }
-    .about-feature-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.4rem;
-      margin-top: 2rem;
-      padding-top: 1.8rem;
-      border-top: 1px solid var(--border);
-    }
-    .feature-item {
+      background: linear-gradient(180deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.48) 100%);
       display: flex;
-      align-items: flex-start;
-      gap: 1.15rem;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2.2rem;
+      color: #ffffff;
+      z-index: 2;
     }
-    .feature-icon-circle {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background: #ffffff;
-      border: 1px solid #ebe4d8;
-      display: flex;
-      align-items: center;
+    .bento-overlay.bento-light {
+      background: linear-gradient(90deg, rgba(242,238,232,0.94) 0%, rgba(242,238,232,0.85) 50%, rgba(242,238,232,0.2) 100%);
+      color: var(--ink);
       justify-content: center;
-      color: var(--forest);
-      flex-shrink: 0;
-      box-shadow: 0 4px 12px rgba(22, 40, 32, 0.04);
+      padding: 2rem 2.4rem;
+      max-width: 60%;
     }
-    .feature-text h4 {
-      font-size: 1.02rem;
-      font-weight: 700;
-      color: var(--forest);
-      margin-bottom: 0.2rem;
+    .bento-overlay.bento-light-right {
+      background: linear-gradient(180deg, rgba(247,245,240,0.92) 0%, rgba(247,245,240,0.82) 45%, rgba(247,245,240,0.1) 100%);
+      color: var(--ink);
+      justify-content: flex-start;
+      padding: 2.4rem 2rem;
     }
-    .feature-text p {
-      font-size: 0.9rem;
-      color: var(--ink-muted);
+    .bento-tag {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      opacity: 0.85;
+    }
+    .bento-title {
+      font-family: var(--font-serif);
+      font-size: 1.85rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      line-height: 1.15;
+      margin-bottom: 0.55rem;
+    }
+    .bento-title-caps {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.15;
+      margin-bottom: 0.45rem;
+    }
+    .bento-desc {
+      font-size: 0.86rem;
+      opacity: 0.9;
       line-height: 1.5;
-      margin: 0;
+      margin-bottom: 1.1rem;
+    }
+    .bento-link {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 2px;
+      width: fit-content;
     }
 
-    /* Section: "Featured Properties" / Collections */
-    .section-collections {
-      max-width: 1240px;
-      margin: 0 auto 6rem;
+    /* Product Showcase: "New Arrivals" (5-Card Grid) */
+    .arrivals-section {
+      max-width: 1360px;
+      margin: 0 auto 5rem;
       padding: 0 2rem;
     }
-    .section-header-row {
+    .arrivals-header {
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
+      margin-bottom: 2.2rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.1rem;
+    }
+    .arrivals-header h2 {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: var(--ink);
+    }
+    .arrivals-view-all {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink);
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 2px;
+    }
+    .arrivals-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
       gap: 1.5rem;
-      margin-bottom: 2rem;
     }
-    .section-title-wrap h2 {
-      font-family: "Playfair Display", Georgia, serif;
-      font-size: clamp(2.2rem, 3.5vw, 3rem);
-      font-weight: 500;
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      color: var(--forest);
-      margin-bottom: 0.4rem;
-    }
-    .section-title-wrap p {
-      font-size: 1rem;
-      color: var(--ink-muted);
-    }
-    .section-nav-arrows {
+    .product-card {
       display: flex;
-      gap: 0.65rem;
+      flex-direction: column;
+      position: relative;
     }
-    .nav-arrow-btn {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: #ffffff;
-      border: 1px solid var(--border);
-      color: var(--forest);
+    .product-photo-wrap {
+      background: var(--bg-card);
+      aspect-ratio: 1 / 1.18;
+      border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: pointer;
-      font-size: 1.1rem;
-      transition: background 0.2s ease, border-color 0.2s ease;
     }
-    .nav-arrow-btn:hover {
-      background: var(--forest);
-      color: #ffffff;
-      border-color: var(--forest);
-    }
-
-    /* Category Filter Tabs (Pill Buttons) */
-    .category-filter-tabs {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-bottom: 2.2rem;
-    }
-    .cat-tab-btn {
-      background: #ffffff;
-      border: 1px solid var(--border);
-      color: var(--ink-muted);
-      padding: 0.55rem 1.25rem;
-      border-radius: var(--radius-pill);
-      font-size: 0.88rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.18s ease;
-    }
-    .cat-tab-btn:hover {
-      border-color: var(--forest);
-      color: var(--forest);
-    }
-    .cat-tab-btn.active {
-      background: var(--forest);
-      color: #ffffff;
-      border-color: var(--forest);
-    }
-
-    /* Product Grid (Havenly Real Estate Cards Style) */
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 2rem;
-    }
-    .havenly-card {
-      background: var(--surface);
-      border-radius: 22px;
-      padding: 14px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-subtle);
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-    }
-    .havenly-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-      border-color: #d8cebf;
-    }
-    .havenly-card.hidden {
-      display: none;
-    }
-    .card-photo-wrap {
-      border-radius: 16px;
-      overflow: hidden;
-      position: relative;
-      aspect-ratio: 4 / 3.2;
-      background: #eee8de;
-      margin-bottom: 1.1rem;
-    }
-    .card-photo-wrap img {
+    .product-photo-wrap img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform 0.45s ease;
     }
-    .havenly-card:hover .card-photo-wrap img {
+    .product-card:hover .product-photo-wrap img {
       transform: scale(1.04);
     }
-    .floating-sale-tag {
+    .product-badge-new {
       position: absolute;
-      top: 12px;
-      right: 12px;
-      background: rgba(255, 255, 255, 0.94);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      color: var(--forest);
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      padding: 5px 12px;
-      border-radius: var(--radius-pill);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    }
-    .card-info {
-      padding: 0.4rem 0.5rem 0.5rem;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-    .card-title {
-      font-family: "Playfair Display", Georgia, serif;
-      font-size: 1.35rem;
+      top: 10px;
+      left: 10px;
+      background: var(--badge-bg);
+      backdrop-filter: blur(4px);
+      padding: 3px 8px;
+      font-size: 0.64rem;
       font-weight: 600;
-      color: var(--forest);
-      line-height: 1.25;
-      margin-bottom: 0.45rem;
-    }
-    .card-desc {
-      font-size: 0.9rem;
-      color: var(--ink-muted);
-      line-height: 1.5;
-      margin-bottom: 1.1rem;
-    }
-    .card-specs-row {
-      display: flex;
-      align-items: center;
-      gap: 1.1rem;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: #6c7870;
-      padding-top: 0.85rem;
-      border-top: 1px solid #f0eae1;
-      margin-top: auto;
-      margin-bottom: 1.1rem;
-    }
-    .spec-item {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-    .spec-icon {
-      font-size: 0.88rem;
-    }
-    .card-footer-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.85rem;
-    }
-    .card-price {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--forest);
-      letter-spacing: -0.01em;
-    }
-    .card-price span {
-      font-size: 0.84rem;
-      font-weight: 500;
-      color: #7b887f;
-    }
-    .card-arrow-btn {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background: var(--forest);
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-      transition: background 0.2s ease, transform 0.15s ease;
-    }
-    .havenly-card:hover .card-arrow-btn {
-      background: var(--forest-hover);
-      transform: translateX(2px);
-    }
-
-    /* Section: "What Our Clients Say" (Testimonials) */
-    .section-testimonials {
-      max-width: 1240px;
-      margin: 0 auto 6.5rem;
-      padding: 0 2rem;
-    }
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
-      gap: 3.5rem;
-      align-items: center;
-    }
-    .testimonial-cards-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.4rem;
-    }
-    .testi-card {
-      background: #ffffff;
-      border-radius: 20px;
-      padding: 1.8rem 1.4rem;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-subtle);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .testi-quote-mark {
-      font-family: "Playfair Display", Georgia, serif;
-      font-size: 2.8rem;
-      line-height: 1;
-      color: var(--forest);
-      opacity: 0.35;
-      margin-bottom: 0.4rem;
-    }
-    .testi-text {
-      font-size: 0.92rem;
-      line-height: 1.6;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
       color: var(--ink);
-      margin-bottom: 1.5rem;
+      border-radius: 1px;
     }
-    .testi-author {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
+    .product-wishlist {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: var(--ink);
+      opacity: 0.65;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: opacity 0.2s ease, transform 0.15s ease;
     }
-    .testi-avatar {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background: #eadecd;
-      color: var(--forest);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 0.85rem;
+    .product-wishlist:hover {
+      opacity: 1;
+      transform: scale(1.15);
     }
-    .testi-meta {
-      flex: 1;
-    }
-    .testi-name {
+    .product-name {
       font-size: 0.88rem;
-      font-weight: 700;
-      color: var(--forest);
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 0.25rem;
+      line-height: 1.4;
     }
-    .testi-city {
-      font-size: 0.76rem;
-      color: #8c8278;
-    }
-    .testi-stars {
-      color: #d4a359;
-      font-size: 0.85rem;
-      margin-top: 0.2rem;
-      letter-spacing: 0.1em;
-    }
-
-    /* Section: Editorial Guides (Journal) */
-    .section-journal {
-      max-width: 1240px;
-      margin: 0 auto 6.5rem;
-      padding: 0 2rem;
-      border-top: 1px solid var(--border);
-      padding-top: 4.5rem;
-    }
-    .journal-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.8rem;
-    }
-    .journal-card {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 1.5rem;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-subtle);
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .journal-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-hover);
-    }
-    .journal-tag {
-      font-size: 0.74rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #8c7355;
-      margin-bottom: 0.6rem;
-    }
-    .journal-card h3 {
-      font-family: "Playfair Display", Georgia, serif;
-      font-size: 1.28rem;
-      font-weight: 600;
-      line-height: 1.3;
-      color: var(--forest);
+    .product-price {
+      font-size: 0.86rem;
+      font-weight: 400;
+      color: var(--ink-secondary);
       margin-bottom: 0.65rem;
     }
-    .journal-card p {
-      font-size: 0.88rem;
-      color: var(--ink-muted);
-      line-height: 1.55;
-      margin-bottom: 1.15rem;
-      flex: 1;
+    .product-swatches {
+      display: flex;
+      gap: 6px;
     }
-    .journal-link {
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: var(--forest);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-    .journal-link:hover {
-      text-decoration: underline;
+    .swatch-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,0.15);
     }
 
-    /* Deep Forest Luxury Footer (Havenly Exact Style) */
-    .site-footer {
-      background: var(--forest-dark);
-      color: #fbf8f3;
-      padding: 5rem 2rem 2.5rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    /* Filter Bar for Remaining Catalog */
+    .catalog-browser {
+      max-width: 1360px;
+      margin: 0 auto 5.5rem;
+      padding: 0 2rem;
     }
-    .footer-container {
-      max-width: 1240px;
+    .catalog-filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .catalog-filter-tabs {
+      display: flex;
+      gap: 1.6rem;
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .cat-btn {
+      background: none;
+      border: none;
+      font-family: inherit;
+      color: var(--ink-muted);
+      cursor: pointer;
+      padding-bottom: 4px;
+      transition: color 0.2s ease;
+    }
+    .cat-btn:hover {
+      color: var(--ink);
+    }
+    .cat-btn.active {
+      color: var(--ink);
+      border-bottom: 1.5px solid var(--ink);
+    }
+    .grid-extra {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem 1.6rem;
+    }
+    .catalog-card {
+      display: flex;
+      flex-direction: column;
+    }
+    .catalog-card.hidden {
+      display: none;
+    }
+    .catalog-photo {
+      background: var(--bg-card);
+      aspect-ratio: 1 / 1.15;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      border-radius: 2px;
+    }
+    .catalog-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .catalog-card:hover .catalog-photo img {
+      transform: scale(1.03);
+    }
+    .catalog-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 0.35rem;
+      line-height: 1.3;
+    }
+    .catalog-card p {
+      font-size: 0.84rem;
+      color: var(--ink-secondary);
+      line-height: 1.5;
+      margin-bottom: 0.85rem;
+      flex: 1;
+    }
+    .catalog-bottom-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 0.75rem;
+    }
+    .catalog-price {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .catalog-cta {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink);
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 1px;
+    }
+
+    /* Full-Bleed Editorial Banner: "A Brighter Kinder Winter" */
+    .editorial-statement-section {
+      max-width: 1360px;
+      margin: 0 auto 5.5rem;
+      padding: 0 2rem;
+    }
+    .editorial-statement-card {
+      position: relative;
+      border-radius: 2px;
+      overflow: hidden;
+      min-height: 480px;
+      background: var(--bg-card);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .statement-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    .statement-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .statement-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(270deg, rgba(247,245,240,0.94) 0%, rgba(247,245,240,0.85) 45%, rgba(247,245,240,0.2) 100%);
+      z-index: 2;
+    }
+    .statement-textbox {
+      position: relative;
+      z-index: 3;
+      padding: 4rem 3.5rem;
+      max-width: 520px;
+    }
+    .statement-textbox h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 1.25rem;
+    }
+    .statement-textbox p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--ink-secondary);
+      margin-bottom: 2rem;
+      max-width: 440px;
+    }
+
+    /* Journal Articles Section */
+    .journal-section {
+      max-width: 1360px;
+      margin: 0 auto 6rem;
+      padding: 0 2rem;
+      border-top: 1px solid var(--border);
+      padding-top: 4rem;
+    }
+    .journal-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 2.4rem;
+    }
+    .journal-head h2 {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+    .journal-articles-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.6rem;
+    }
+    .journal-entry {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 1.8rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .journal-cat {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 0.65rem;
+    }
+    .journal-entry h3 {
+      font-family: var(--font-serif);
+      font-size: 1.24rem;
+      font-weight: 400;
+      line-height: 1.35;
+      margin-bottom: 0.65rem;
+      color: var(--ink);
+    }
+    .journal-entry p {
+      font-size: 0.86rem;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+      flex: 1;
+    }
+    .journal-entry a.read-btn {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink);
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 2px;
+      width: fit-content;
+    }
+
+    /* Lumière Editorial Footer */
+    .lumiere-footer {
+      background: var(--bg-warm);
+      border-top: 1px solid var(--border);
+      padding: 4.5rem 2rem 2.5rem;
+    }
+    .footer-inner {
+      max-width: 1360px;
       margin: 0 auto;
     }
-    .footer-columns {
+    .footer-grid {
       display: grid;
-      grid-template-columns: 1.35fr 0.85fr 0.85fr 1.35fr;
+      grid-template-columns: 1.4fr 1fr 1fr 1.4fr;
       gap: 3.5rem;
       margin-bottom: 4rem;
     }
-    .footer-brand h3 {
-      font-family: "Playfair Display", Georgia, serif;
-      font-size: 1.7rem;
-      font-weight: 600;
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      margin-bottom: 0.85rem;
+    .footer-col h3 {
+      font-family: var(--font-brand);
+      font-size: 1.45rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      color: var(--ink);
     }
-    .footer-brand p {
-      font-size: 0.92rem;
-      color: rgba(251, 248, 243, 0.7);
-      line-height: 1.6;
+    .footer-col h4 {
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink);
+      margin-bottom: 1.4rem;
+    }
+    .footer-col p {
+      font-size: 0.88rem;
+      color: var(--ink-secondary);
+      line-height: 1.65;
       max-width: 320px;
-      margin-bottom: 1.6rem;
+      margin-bottom: 1.4rem;
     }
-    .social-links {
-      display: flex;
-      gap: 0.85rem;
-    }
-    .social-btn {
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.08);
-      color: #fbf8f3;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.95rem;
-      transition: background 0.2s ease, transform 0.15s ease;
-    }
-    .social-btn:hover {
-      background: #ffffff;
-      color: var(--forest);
-      transform: translateY(-2px);
-    }
-    .footer-nav-col h4 {
-      font-size: 0.98rem;
-      font-weight: 600;
-      color: #ffffff;
-      margin-bottom: 1.3rem;
-    }
-    .footer-links-list {
+    .footer-links-col {
       list-style: none;
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
     }
-    .footer-links-list a {
-      font-size: 0.9rem;
-      color: rgba(251, 248, 243, 0.75);
+    .footer-links-col a {
+      font-size: 0.84rem;
+      color: var(--ink-secondary);
       transition: color 0.2s ease;
     }
-    .footer-links-list a:hover {
-      color: #ffffff;
+    .footer-links-col a:hover {
+      color: var(--ink);
     }
-    .footer-newsletter h4 {
-      font-size: 0.98rem;
-      font-weight: 600;
-      color: #ffffff;
-      margin-bottom: 0.5rem;
-    }
-    .footer-newsletter p {
-      font-size: 0.88rem;
-      color: rgba(251, 248, 243, 0.7);
-      margin-bottom: 1.25rem;
-    }
-    .newsletter-form {
+    .footer-newsletter-box {
       display: flex;
-      align-items: center;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: var(--radius-pill);
-      padding: 5px 6px 5px 18px;
-      max-width: 380px;
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 6px;
+      max-width: 340px;
     }
-    .newsletter-input {
+    .footer-newsletter-box input {
       flex: 1;
+      border: none;
       background: transparent;
-      border: none;
-      color: #ffffff;
-      font-family: inherit;
-      font-size: 0.9rem;
       outline: none;
+      font-family: inherit;
+      font-size: 0.86rem;
+      color: var(--ink);
     }
-    .newsletter-input::placeholder {
-      color: rgba(251, 248, 243, 0.45);
+    .footer-newsletter-box input::placeholder {
+      color: var(--ink-muted);
     }
-    .newsletter-submit {
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      background: #eadecd;
+    .footer-newsletter-box button {
       border: none;
-      color: var(--forest);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
+      background: transparent;
       font-size: 1.1rem;
-      transition: transform 0.15s ease, background 0.2s ease;
+      color: var(--ink);
+      cursor: pointer;
     }
-    .newsletter-submit:hover {
-      transform: scale(1.05);
-      background: #ffffff;
-    }
-    .footer-bottom {
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    .footer-legal-bar {
+      border-top: 1px solid var(--border);
       padding-top: 2rem;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      gap: 1rem;
-      font-size: 0.84rem;
-      color: rgba(251, 248, 243, 0.6);
+      gap: 1.25rem;
+      font-size: 0.78rem;
+      color: var(--ink-muted);
     }
-    .footer-bottom-links {
+    .footer-legal-links {
       display: flex;
       gap: 1.5rem;
     }
-    .footer-bottom-links a:hover {
-      color: #ffffff;
+    .footer-legal-links a:hover {
+      color: var(--ink);
     }
 
-    /* Responsive Adjustments */
-    @media (max-width: 1024px) {
-      .hero-section {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-        padding-top: 2rem;
-      }
-      .floating-filter-bar {
+    /* Responsive */
+    @media (max-width: 1080px) {
+      .bento-grid {
         grid-template-columns: 1fr 1fr;
-        border-radius: 24px;
-        padding: 1.5rem;
-        gap: 1.25rem;
+        grid-template-rows: auto;
       }
-      .filter-segment {
-        border-right: none;
-        padding-right: 0;
+      .bento-tall-left {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        height: 380px;
       }
-      .filter-search-btn {
-        grid-column: span 2;
-        justify-content: center;
+      .bento-tall-right {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        height: 380px;
       }
-      .section-about {
-        grid-template-columns: 1fr;
-        gap: 3rem;
+      .bento-top-mid {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        height: 240px;
       }
-      .testimonials-grid {
-        grid-template-columns: 1fr;
+      .bento-bot-mid {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        height: 240px;
       }
-      .testimonial-cards-row {
-        grid-template-columns: 1fr;
+      .arrivals-grid {
+        grid-template-columns: repeat(3, 1fr);
       }
-      .footer-columns {
+      .value-banner-inner {
         grid-template-columns: 1fr 1fr;
-        gap: 2.5rem;
+        gap: 1.5rem;
+      }
+      .journal-articles-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
       }
     }
-    @media (max-width: 680px) {
-      .nav-menu {
+    @media (max-width: 720px) {
+      .header-nav-list {
         display: none;
       }
-      .floating-filter-bar {
+      .header-top {
+        grid-template-columns: 1fr 1fr;
+      }
+      .header-search {
+        display: none;
+      }
+      .hero-editorial-card {
         grid-template-columns: 1fr;
       }
-      .filter-search-btn {
-        grid-column: span 1;
+      .hero-floating-card-wrap {
+        display: none;
       }
-      .cards-grid {
+      .hero-textbox {
+        padding: 3rem 1.5rem;
+      }
+      .value-banner-inner {
         grid-template-columns: 1fr;
       }
-      .footer-columns {
+      .bento-grid {
         grid-template-columns: 1fr;
       }
-      .footer-bottom {
-        flex-direction: column;
-        align-items: flex-start;
+      .bento-tall-left, .bento-tall-right, .bento-top-mid, .bento-bot-mid {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        height: 320px;
+      }
+      .arrivals-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .journal-articles-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -977,706 +982,612 @@
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "GRIMORA11 Curated US Gift Guide",
-    "description": "Original woodcut, gouache, and vintage editorial holiday cards, ceramic mugs, graphic tees, and customizable small-business stationery on Zazzle.",
+    "name": "LUMIÈRE GRIMORA Winter Elegance Collection",
+    "description": "Timeless winter silhouettes, heirloom holiday cards, artisan ceramic mugs, cozy graphic tees, and luxury wrapping paper on Zazzle.",
     "url": "https://darkshod.github.io/"
   }
   </script>
 </head>
 <body>
 
-  <!-- Top Navigation (Havenly Exact Vibe) -->
-  <header class="navbar">
-    <div class="navbar-container">
-      <a class="nav-brand" href="./">
-        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/>
-          <polyline points="9 22 9 12 15 12 15 22"/>
+  <!-- Top Utility Header (Exact Lumière Style) -->
+  <header>
+    <div class="header-top">
+      <div class="header-search">
+        <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
         </svg>
-        <span>Grimora11</span>
-      </a>
-
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="./" class="active">Home</a></li>
-          <li><a href="#catalog">Collections</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="/blog.html">Journal</a></li>
-        </ul>
-      </nav>
-
-      <div class="nav-action">
-        <a class="btn-nav" href="#catalog">Browse Catalog &rarr;</a>
+        <input type="text" id="storeSearchInput" placeholder="Search..." aria-label="Search collection" />
       </div>
-    </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="hero-content">
-      <div class="pill-badge">
-        <span class="pill-dot"></span>
-        <span>Find Your Heirloom Keepsake</span>
-      </div>
-      <h1>Discover Your<br />Perfect Piece</h1>
-      <p>Artisan holiday cards, hand-finished ceramic mugs, and cozy graphic tees. Small-batch editorial charm thoughtfully crafted for your home and festive tables.</p>
-      <div class="hero-buttons">
-        <a class="btn-pill-dark" href="#catalog">Browse Collections &rarr;</a>
-        <a class="btn-pill-video" href="#about">
-          <span class="play-circle">&#9658;</span>
-          <span>Our Story</span>
+      <a class="header-logo" href="./">LUMI&Egrave;RE</a>
+
+      <div class="header-actions">
+        <span>USD &or;</span>
+        <a href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener" aria-label="Account">
+          <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </a>
+        <a href="https://www.zazzle.com/collections/heirloom_holiday_cards_seasonal_gifts-119663743607715696?rf=238181835450951105" target="_blank" rel="noopener" aria-label="Shopping Bag">
+          <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
         </a>
       </div>
     </div>
 
-    <div class="hero-gallery">
-      <div class="hero-img-main">
-        <img src="./images/pinkmas-card.jpg" alt="Pinkmas Coquette Bow Tree Christmas Card on marble table" loading="eager" />
+    <!-- Navigation Menu (Lumière Exact Nav) -->
+    <nav class="header-nav" aria-label="Primary navigation">
+      <ul class="header-nav-list">
+        <li><a href="#arrivals">New In</a></li>
+        <li><a href="#catalog" data-nav="holiday">Holiday Cards</a></li>
+        <li><a href="#catalog" data-nav="mugs">Ceramic Mugs</a></li>
+        <li><a href="#catalog" data-nav="apparel">Apparel</a></li>
+        <li><a href="#catalog" data-nav="stationery">Stationery &amp; Wrap</a></li>
+        <li><a href="/blog.html">Journal</a></li>
+        <li><a href="#editorial">Our World</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section: "Winter Elegance" -->
+  <section class="hero-container">
+    <div class="hero-editorial-card">
+      <div class="hero-bg-visual">
+        <img src="./images/pinkmas-card.jpg" alt="Winter Elegance Pinkmas Coquette Bow Tree Card" loading="eager" />
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-textbox">
+        <span class="hero-eyebrow">A Quieter Season</span>
+        <h1>Winter<br />Elegance</h1>
+        <p>Timeless silhouettes, artisan textures and refined essentials for a more beautiful winter.</p>
+        <a class="btn-dark-editorial" href="#catalog">Shop the Collection &rarr;</a>
+      </div>
+
+      <!-- Right Floating Signature Card -->
+      <div class="hero-floating-card-wrap">
+        <div class="hero-signature-card">
+          <div class="signature-card-photo">
+            <img src="./images/tartan-card.jpg" alt="The Signature Tartan Rocking Horse Card" loading="eager" />
+          </div>
+          <div class="signature-card-title">The Signature Keepsake</div>
+          <div class="signature-card-desc">&ldquo;A modern classic, made for every winter ahead.&rdquo;</div>
+          <a class="signature-card-link" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_card-256144319816877027?rf=238181835450951105" target="_blank" rel="noopener">Discover Now &rarr;</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Floating Search & Filter Bar (Havenly Signature Feature) -->
-  <div class="floating-filter-container">
-    <div class="floating-filter-bar">
-      <div class="filter-segment">
-        <div class="filter-segment-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
-            <circle cx="12" cy="10" r="3"/>
-          </svg>
-        </div>
-        <div class="filter-segment-text">
-          <span class="filter-label">Occasion</span>
-          <select id="selectOccasion" class="filter-select">
-            <option value="all">Any Occasion</option>
-            <option value="holiday" selected>Holiday &amp; Winter</option>
-            <option value="everyday">Everyday Rituals</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="filter-segment">
-        <div class="filter-segment-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-          </svg>
-        </div>
-        <div class="filter-segment-text">
-          <span class="filter-label">Product Type</span>
-          <select id="selectType" class="filter-select">
-            <option value="all">Any Type</option>
-            <option value="holiday">Holiday Cards</option>
-            <option value="mugs">Artisan Mugs</option>
-            <option value="apparel">Cozy Apparel</option>
-            <option value="stationery">Art &amp; Stationery</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="filter-segment">
-        <div class="filter-segment-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="1" x2="12" y2="23"/>
-            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-          </svg>
-        </div>
-        <div class="filter-segment-text">
-          <span class="filter-label">Price Range</span>
-          <select id="selectPrice" class="filter-select">
-            <option value="all">Any Price</option>
-            <option value="under10">Under $10 (Cards &amp; Wrap)</option>
-            <option value="under20">Under $20 (Ceramic Mugs)</option>
-            <option value="over20">$20+ (Tees &amp; Posters)</option>
-          </select>
-        </div>
-      </div>
-
-      <button id="quickSearchBtn" class="filter-search-btn" type="button">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="8"/>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+  <!-- Value Propositions Banner (Lumière Exact 4 Pillars) -->
+  <section class="value-banner">
+    <div class="value-banner-inner">
+      <div class="value-item">
+        <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <rect x="1" y="3" width="15" height="13"/>
+          <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+          <circle cx="5.5" cy="18.5" r="2.5"/>
+          <circle cx="18.5" cy="18.5" r="2.5"/>
         </svg>
-        <span>Search</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- Section: "More Than Just..." (Brand Craftsmanship & Quality) -->
-  <section id="about" class="section-about">
-    <div class="about-visual">
-      <div class="about-arch-frame">
-        <img src="./images/pinkmas-mug.jpg" alt="Pinkmas Coquette Bow Tree Mug on breakfast table" loading="lazy" />
-      </div>
-    </div>
-
-    <div class="about-body">
-      <div class="pill-badge">
-        <span class="pill-dot"></span>
-        <span>About Grimora11</span>
-      </div>
-      <h2>More Than Just<br />Print-on-Demand</h2>
-      <p>We're here to make your holiday gifting, seasonal hosting, and personal space simple, tactile, and unforgettable. With years of experience and a passion for original gouache brushwork and archival printmaking, we help you find more than a design &mdash; a keepsake to call your own.</p>
-      <a class="btn-pill-dark" href="#catalog">Learn More &rarr;</a>
-
-      <div class="about-feature-grid">
-        <div class="feature-item">
-          <div class="feature-icon-circle">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/>
-            </svg>
-          </div>
-          <div class="feature-text">
-            <h4>Trusted Studio</h4>
-            <p>Printed on heavyweight archival cardstocks and lead-free durable ceramics.</p>
-          </div>
+        <div class="value-text">
+          <h4>Complimentary Shipping</h4>
+          <p>Eligible orders via Zazzle Plus</p>
         </div>
+      </div>
 
-        <div class="feature-item">
-          <div class="feature-icon-circle">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-          </div>
-          <div class="feature-text">
-            <h4>Secure Transactions</h4>
-            <p>Fulfillments and 100% money-back satisfaction guaranteed by Zazzle USA.</p>
-          </div>
+      <div class="value-item">
+        <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <polyline points="20 12 20 22 4 22 4 12"/>
+          <rect x="2" y="7" width="20" height="5"/>
+          <line x1="12" y1="22" x2="12" y2="7"/>
+          <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+          <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+        </svg>
+        <div class="value-text">
+          <h4>Beautifully Packaged</h4>
+          <p>A special experience, always</p>
         </div>
+      </div>
 
-        <div class="feature-item">
-          <div class="feature-icon-circle">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 20h9"/>
-              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
-            </svg>
-          </div>
-          <div class="feature-text">
-            <h4>Dedicated Customization</h4>
-            <p>Easily personalize names, dates, family photos, and greetings in real time.</p>
-          </div>
+      <div class="value-item">
+        <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+        </svg>
+        <div class="value-text">
+          <h4>Thoughtfully Sourced</h4>
+          <p>Archival papers, enduring ceramics</p>
+        </div>
+      </div>
+
+      <div class="value-item">
+        <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+        <div class="value-text">
+          <h4>A Conscious Heirloom</h4>
+          <p>Timeless pieces for a brighter tomorrow</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section: Featured Collections (Havenly Card Grid) -->
-  <section id="catalog" class="section-collections">
-    <div class="section-header-row">
-      <div class="section-title-wrap">
-        <div class="pill-badge">
-          <span class="pill-dot"></span>
-          <span>Our Curated Picks</span>
+  <!-- Editorial Bento Mosaic (Lumière Exact Category Grid) -->
+  <section class="bento-section">
+    <div class="bento-grid">
+
+      <!-- Bento 1: Tall Left (Winter Apparel) -->
+      <div class="bento-card bento-tall-left">
+        <img src="./images/tini-tee.jpg" alt="Winter Graphic Apparel" loading="lazy" />
+        <div class="bento-overlay">
+          <div class="bento-title-caps">Winter<br />Apparel</div>
+          <div class="bento-desc">Iconic cozy layers for colder days.</div>
+          <a class="bento-link" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_holiday_shirt-256613549210546971?rf=238181835450951105" target="_blank" rel="noopener">Shop Apparel &rarr;</a>
         </div>
-        <h2>Featured Collections</h2>
-        <p>Explore our handpicked selection of heirloom designs and holiday staples.</p>
       </div>
 
-      <div class="section-nav-arrows">
-        <button class="nav-arrow-btn" id="prevCardBtn" aria-label="Previous selection">&larr;</button>
-        <button class="nav-arrow-btn" id="nextCardBtn" aria-label="Next selection">&rarr;</button>
+      <!-- Bento 2: Top Mid (Luxe Ceramics & Mugs) -->
+      <div class="bento-card bento-top-mid">
+        <img src="./images/pinkmas-mug.jpg" alt="Luxe Ceramic Mugs" loading="lazy" />
+        <div class="bento-overlay bento-light">
+          <div class="bento-title-caps">Luxe<br />Ceramics</div>
+          <div class="bento-desc">Soft textures. Lasting warmth.</div>
+          <a class="bento-link" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_11oz_coffee_mug-256760309246942860?rf=238181835450951105" target="_blank" rel="noopener">Shop Mugs &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Bento 3: Bottom Mid (Elevated Accessories & Keepsakes) -->
+      <div class="bento-card bento-bot-mid">
+        <img src="./images/tartan-ornament.jpg" alt="Elevated Keepsakes & Tree Decor" loading="lazy" />
+        <div class="bento-overlay bento-light">
+          <div class="bento-title-caps">Elevated<br />Keepsakes</div>
+          <div class="bento-desc">The finishing touches for every celebration.</div>
+          <a class="bento-link" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_ornament-256464927123758198?rf=238181835450951105" target="_blank" rel="noopener">Shop Keepsakes &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Bento 4: Tall Right (Moments That Matter / Seasonal Edit) -->
+      <div class="bento-card bento-tall-right">
+        <img src="./images/tartan-wrap.jpg" alt="Moments That Matter Seasonal Edit" loading="lazy" />
+        <div class="bento-overlay bento-light-right">
+          <div class="bento-tag">The Seasonal Edit</div>
+          <div class="bento-title">Moments<br />That Matter</div>
+          <div class="bento-desc">Stories, places and pieces that make winter extraordinary.</div>
+          <a class="bento-link" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_wrap_wrapping_paper-256922898737242657?rf=238181835450951105" target="_blank" rel="noopener">Explore the Edit &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- New Arrivals: 5-Card Product Showcase (Lumière Exact Row) -->
+  <section id="arrivals" class="arrivals-section">
+    <div class="arrivals-header">
+      <h2>New Arrivals</h2>
+      <a class="arrivals-view-all" href="#catalog">View All &rarr;</a>
+    </div>
+
+    <div class="arrivals-grid">
+      <!-- Item 1: Pinkmas Card -->
+      <div class="product-card">
+        <a class="product-photo-wrap" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_christmas_card-256802400221516860?rf=238181835450951105" target="_blank" rel="noopener">
+          <span class="product-badge-new">New</span>
+          <span class="product-wishlist" title="Save">&#9825;</span>
+          <img src="./images/pinkmas-card.jpg" alt="The Pinkmas Coquette Bow Tree Card" loading="lazy" />
+        </a>
+        <div class="product-name">The Pinkmas Coquette Card</div>
+        <div class="product-price">$2.45</div>
+        <div class="product-swatches">
+          <span class="swatch-dot" style="background:#e8dcd6;"></span>
+          <span class="swatch-dot" style="background:#f4ece1;"></span>
+          <span class="swatch-dot" style="background:#221e1c;"></span>
+        </div>
+      </div>
+
+      <!-- Item 2: Tartan Mug -->
+      <div class="product-card">
+        <a class="product-photo-wrap" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_11oz_mug-256771995567920169?rf=238181835450951105" target="_blank" rel="noopener">
+          <span class="product-badge-new">New</span>
+          <span class="product-wishlist" title="Save">&#9825;</span>
+          <img src="./images/tartan-mug.jpg" alt="The Tartan Rocking Horse Mug" loading="lazy" />
+        </a>
+        <div class="product-name">The Tartan Rocking Horse Mug</div>
+        <div class="product-price">$18.95</div>
+        <div class="product-swatches">
+          <span class="swatch-dot" style="background:#f8f6f0;"></span>
+          <span class="swatch-dot" style="background:#1d2922;"></span>
+          <span class="swatch-dot" style="background:#8b2b28;"></span>
+        </div>
+      </div>
+
+      <!-- Item 3: Tini Martini Tee -->
+      <div class="product-card">
+        <a class="product-photo-wrap" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_holiday_shirt-256613549210546971?rf=238181835450951105" target="_blank" rel="noopener">
+          <span class="product-badge-new">New</span>
+          <span class="product-wishlist" title="Save">&#9825;</span>
+          <img src="./images/tini-tee.jpg" alt="The Retro Martini Holiday Tee" loading="lazy" />
+        </a>
+        <div class="product-name">The Retro Martini Holiday Tee</div>
+        <div class="product-price">$24.50</div>
+        <div class="product-swatches">
+          <span class="swatch-dot" style="background:#f3ece2;"></span>
+          <span class="swatch-dot" style="background:#3a4b3d;"></span>
+          <span class="swatch-dot" style="background:#221e1c;"></span>
+        </div>
+      </div>
+
+      <!-- Item 4: Tartan Ornament -->
+      <div class="product-card">
+        <a class="product-photo-wrap" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_ornament-256464927123758198?rf=238181835450951105" target="_blank" rel="noopener">
+          <span class="product-badge-new">New</span>
+          <span class="product-wishlist" title="Save">&#9825;</span>
+          <img src="./images/tartan-ornament.jpg" alt="The Tartan Rocking Horse Ceramic Ornament" loading="lazy" />
+        </a>
+        <div class="product-name">The Tartan Ceramic Keepsake</div>
+        <div class="product-price">$16.95</div>
+        <div class="product-swatches">
+          <span class="swatch-dot" style="background:#f7f6f2;"></span>
+          <span class="swatch-dot" style="background:#c5a059;"></span>
+        </div>
+      </div>
+
+      <!-- Item 5: Sourdough Bakehouse Tee -->
+      <div class="product-card">
+        <a class="product-photo-wrap" href="https://www.zazzle.com/wild_yeast_and_wheat_sourdough_bakehouse_t_shirt-256398671135712299?rf=238181835450951105" target="_blank" rel="noopener">
+          <span class="product-badge-new">New</span>
+          <span class="product-wishlist" title="Save">&#9825;</span>
+          <img src="./images/sourdough-tee.jpg" alt="The Wild Yeast & Wheat Tee" loading="lazy" />
+        </a>
+        <div class="product-name">The Wild Yeast &amp; Wheat Tee</div>
+        <div class="product-price">$24.50</div>
+        <div class="product-swatches">
+          <span class="swatch-dot" style="background:#e8dfd3;"></span>
+          <span class="swatch-dot" style="background:#221e1c;"></span>
+          <span class="swatch-dot" style="background:#6a5e52;"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Catalog Browser with Category Tabs -->
+  <section id="catalog" class="catalog-browser">
+    <div class="catalog-filter-bar">
+      <div class="catalog-filter-tabs">
+        <button class="cat-btn active" data-filter="all" type="button">All Creations</button>
+        <button class="cat-btn" data-filter="holiday" type="button">Holiday</button>
+        <button class="cat-btn" data-filter="mugs" type="button">Ceramic Mugs</button>
+        <button class="cat-btn" data-filter="apparel" type="button">Apparel</button>
+        <button class="cat-btn" data-filter="stationery" type="button">Stationery &amp; Prints</button>
+      </div>
+      <div style="font-size:0.8rem;color:var(--ink-secondary);">
+        12 Curated Essentials
       </div>
     </div>
 
-    <!-- Category Tabs -->
-    <div class="category-filter-tabs" role="tablist">
-      <button class="cat-tab-btn active" data-filter="all" type="button">All Pieces</button>
-      <button class="cat-tab-btn" data-filter="holiday" type="button">Holiday</button>
-      <button class="cat-tab-btn" data-filter="mugs" type="button">Artisan Mugs</button>
-      <button class="cat-tab-btn" data-filter="apparel" type="button">Graphic Apparel</button>
-      <button class="cat-tab-btn" data-filter="stationery" type="button">Stationery &amp; Prints</button>
-    </div>
+    <div class="grid-extra">
 
-    <!-- Cards Grid -->
-    <div class="cards-grid">
-
-      <!-- Card 1: Pinkmas Card -->
-      <article class="havenly-card" data-cat="holiday" data-price="2.45">
-        <div class="card-photo-wrap">
-          <span class="floating-sale-tag">For Gifting</span>
-          <img src="./images/pinkmas-card.jpg" alt="Pinkmas Coquette Bow Tree Christmas Card" loading="lazy" decoding="async" />
-        </div>
-        <div class="card-info">
-          <h3 class="card-title">Pinkmas Coquette Bow Tree Card</h3>
-          <p class="card-desc">Gouache evergreen tree with blush satin bows, pearls, and brass taper candles.</p>
-          <div class="card-specs-row">
-            <span class="spec-item"><span class="spec-icon">&#128196;</span> 5&times;7 Card</span>
-            <span class="spec-item"><span class="spec-icon">&#10024;</span> Archival Matte</span>
-            <span class="spec-item"><span class="spec-icon">&#127482;&#127488;</span> Made in USA</span>
-          </div>
-          <div class="card-footer-row">
-            <div class="card-price">$2.45 <span>ea</span></div>
-            <a class="card-arrow-btn" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_christmas_card-256802400221516860?rf=238181835450951105" target="_blank" rel="noopener" aria-label="Customize Pinkmas Card on Zazzle">&rarr;</a>
-          </div>
+      <!-- Product 1 -->
+      <article class="catalog-card" data-cat="holiday">
+        <a class="catalog-photo" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_christmas_card-256802400221516860?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/pinkmas-card.jpg" alt="Pinkmas Coquette Bow Tree Card" loading="lazy" />
+        </a>
+        <h3>Pinkmas Coquette Bow Tree Card</h3>
+        <p>Gouache evergreen with blush satin ribbons on 5&times;7 heavyweight matte cardstock.</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$2.45 ea</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_christmas_card-256802400221516860?rf=238181835450951105" target="_blank" rel="noopener">Customize &rarr;</a>
         </div>
       </article>
 
-      <!-- Card 2: Pinkmas Mug -->
-      <article class="havenly-card" data-cat="holiday mugs" data-price="18.95">
-        <div class="card-photo-wrap">
-          <span class="floating-sale-tag">Bestseller</span>
-          <img src="./images/pinkmas-mug.jpg" alt="Pinkmas Coquette Bow Tree 11oz Coffee Mug" loading="lazy" decoding="async" />
-        </div>
-        <div class="card-info">
-          <h3 class="card-title">Pinkmas Bow Tree 11oz Mug</h3>
-          <p class="card-desc">Durable glossy ceramic printed with our blush-bow Christmas tree for winter mornings.</p>
-          <div class="card-specs-row">
-            <span class="spec-item"><span class="spec-icon">&#9749;</span> 11oz Ceramic</span>
-            <span class="spec-item"><span class="spec-icon">&#129532;</span> Dishwasher Safe</span>
-            <span class="spec-item"><span class="spec-icon">&#10024;</span> Vivid Glaze</span>
-          </div>
-          <div class="card-footer-row">
-            <div class="card-price">$18.95 <span></span></div>
-            <a class="card-arrow-btn" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_11oz_coffee_mug-256760309246942860?rf=238181835450951105" target="_blank" rel="noopener" aria-label="View Pinkmas Mug on Zazzle">&rarr;</a>
-          </div>
+      <!-- Product 2 -->
+      <article class="catalog-card" data-cat="holiday mugs">
+        <a class="catalog-photo" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_11oz_coffee_mug-256760309246942860?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/pinkmas-mug.jpg" alt="Pinkmas Coquette Bow Tree 11oz Mug" loading="lazy" />
+        </a>
+        <h3>Pinkmas Bow Tree 11oz Mug</h3>
+        <p>Warm morning ceramic mug printed with our signature blush bow tree illustration.</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$18.95</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/pinkmas_coquette_bow_tree_11oz_coffee_mug-256760309246942860?rf=238181835450951105" target="_blank" rel="noopener">View Mug &rarr;</a>
         </div>
       </article>
 
-      <!-- Card 3: Tini Martini Shirt -->
-      <article class="havenly-card" data-cat="holiday apparel" data-price="24.50">
-        <div class="card-photo-wrap">
-          <span class="floating-sale-tag">Host Pick</span>
-          <img src="./images/tini-tee.jpg" alt="A Tini Bit Merry Retro Martini Holiday Shirt" loading="lazy" decoding="async" />
-        </div>
-        <div class="card-info">
-          <h3 class="card-title">A Tini Bit Merry Martini Shirt</h3>
-          <p class="card-desc">Mid-century olive martini graphic tee with crimson holiday bow and winter holly garnish.</p>
-          <div class="card-specs-row">
-            <span class="spec-item"><span class="spec-icon">&#128085;</span> 100% Cotton</span>
-            <span class="spec-item"><span class="spec-icon">&#127991;</span> Unisex Cut</span>
-            <span class="spec-item"><span class="spec-icon">&#127912;</span> Soft Ink</span>
-          </div>
-          <div class="card-footer-row">
-            <div class="card-price">$24.50 <span></span></div>
-            <a class="card-arrow-btn" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_holiday_shirt-256613549210546971?rf=238181835450951105" target="_blank" rel="noopener" aria-label="View Martini Shirt on Zazzle">&rarr;</a>
-          </div>
+      <!-- Product 3 -->
+      <article class="catalog-card" data-cat="holiday apparel">
+        <a class="catalog-photo" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_holiday_shirt-256613549210546971?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/tini-tee.jpg" alt="A Tini Bit Merry Retro Martini Shirt" loading="lazy" />
+        </a>
+        <h3>A Tini Bit Merry Martini Shirt</h3>
+        <p>Mid-century olive martini graphic tee with crimson holiday bow and festive holly.</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$24.50</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_holiday_shirt-256613549210546971?rf=238181835450951105" target="_blank" rel="noopener">View Shirt &rarr;</a>
         </div>
       </article>
 
-      <!-- Card 4: Tini Mug -->
-      <article class="havenly-card" data-cat="holiday mugs" data-price="18.95">
-        <div class="card-photo-wrap">
-          <span class="floating-sale-tag">Barware</span>
-          <img src="./images/tini-mug.jpg" alt="A Tini Bit Merry Retro Martini 11oz Mug" loading="lazy" decoding="async" />
-        </div>
-        <div class="card-info">
-          <h3 class="card-title">A Tini Bit Merry 11oz Mug</h3>
-          <p class="card-desc">Festive retro cocktail 11oz ceramic mug &mdash; ideal for stocking stuffers and cocktail lovers.</p>
-          <div class="card-specs-row">
-            <span class="spec-item"><span class="spec-icon">&#9749;</span> 11oz Gloss</span>
-            <span class="spec-item"><span class="spec-icon">&#9832;</span> Microwave Safe</span>
-            <span class="spec-item"><span class="spec-icon">&#127864;</span> Bar Cart</span>
-          </div>
-          <div class="card-footer-row">
-            <div class="card-price">$18.95 <span></span></div>
-            <a class="card-arrow-btn" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_11oz_mug-256693426679944048?rf=238181835450951105" target="_blank" rel="noopener" aria-label="View Martini Mug on Zazzle">&rarr;</a>
-          </div>
+      <!-- Product 4 -->
+      <article class="catalog-card" data-cat="holiday mugs">
+        <a class="catalog-photo" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_11oz_mug-256693426679944048?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/tini-mug.jpg" alt="A Tini Bit Merry Retro Martini Mug" loading="lazy" />
+        </a>
+        <h3>A Tini Bit Merry 11oz Mug</h3>
+        <p>Cocktail club ceramic barware mug for holiday hosts and winter gathering toasts.</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$18.95</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/a_tini_bit_merry_retro_martini_11oz_mug-256693426679944048?rf=238181835450951105" target="_blank" rel="noopener">View Mug &rarr;</a>
         </div>
       </article>
 
-      <!-- Card 5: Tartan Rocking Horse Card -->
-      <article class="havenly-card" data-cat="holiday" data-price="2.45">
-        <div class="card-photo-wrap">
-          <span class="floating-sale-tag">Old Money</span>
-          <img src="./images/tartan-card.jpg" alt="Tartan Rocking Horse Vintage Christmas Card" loading="lazy" decoding="async" />
-        </div>
-        <div class="card-info">
-          <h3 class="card-title">Tartan Rocking Horse Card</h3>
-          <p class="card-desc">Watercolor rocking horse draped in Black Watch tartan with brass bells and cedar wreath.</p>
-          <div class="card-specs-row">
-            <span class="spec-item"><span class="spec-icon">&#128196;</span> 5&times;7 Flat</span>
-            <span class="spec-item"><span class="spec-icon">&#10024;</span> Felt Finish</span>
-            <span class="spec-item"><span class="spec-icon">&#128230;</span> Includes Env</span>
-          </div>
-          <div class="card-footer-row">
-            <div class="card-price">$2.45 <span>ea</span></div>
-            <a class="card-arrow-btn" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_card-256144319816877027?rf=238181835450951105" target="_blank" rel="noopener" aria-label="Customize Tartan Card on Zazzle">&rarr;</a>
-          </div>
+      <!-- Product 5 -->
+      <article class="catalog-card" data-cat="holiday">
+        <a class="catalog-photo" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_card-256144319816877027?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/tartan-card.jpg" alt="Tartan Rocking Horse Vintage Christmas Card" loading="lazy" />
+        </a>
+        <h3>Tartan Rocking Horse Card</h3>
+        <p>Watercolor rocking horse draped in traditional Scottish Black Watch tartan plaid.</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$2.45 ea</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_card-256144319816877027?rf=238181835450951105" target="_blank" rel="noopener">Customize &rarr;</a>
         </div>
       </article>
 
-      <!-- Card 6: Tartan Ornament -->
-      <article class="havenly-card" data-cat="holiday" data-price="16.95">
-        <div class="card-photo-wrap">
-          <span class="floating-sale-tag">Keepsake</span>
-          <img src="./images/tartan-ornament.jpg" alt="Tartan Rocking Horse Ceramic Christmas Ornament" loading="lazy" decoding="async" />
-        </div>
-        <div class="card-info">
-          <h3 class="card-title">Tartan Rocking Horse Ornament</h3>
-          <p class="card-desc">Glossy round white ceramic Christmas tree ornament featuring our heirloom tartan horse.</p>
-          <div class="card-specs-row">
-            <span class="spec-item"><span class="spec-icon">&#127876;</span> Ceramic Disc</span>
-            <span class="spec-item"><span class="spec-icon">&#129525;</span> Gold Ribbon</span>
-            <span class="spec-item"><span class="spec-icon">&#10024;</span> 2.87&Prime; Round</span>
-          </div>
-          <div class="card-footer-row">
-            <div class="card-price">$16.95 <span></span></div>
-            <a class="card-arrow-btn" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_ornament-256464927123758198?rf=238181835450951105" target="_blank" rel="noopener" aria-label="View Tartan Ornament on Zazzle">&rarr;</a>
-          </div>
+      <!-- Product 6 -->
+      <article class="catalog-card" data-cat="holiday">
+        <a class="catalog-photo" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_ornament-256464927123758198?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/tartan-ornament.jpg" alt="Tartan Rocking Horse Ceramic Ornament" loading="lazy" />
+        </a>
+        <h3>Tartan Rocking Horse Ornament</h3>
+        <p>Glossy ceramic round Christmas tree keepsake with gold hanging string.</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$16.95</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_ornament-256464927123758198?rf=238181835450951105" target="_blank" rel="noopener">View Keepsake &rarr;</a>
         </div>
       </article>
 
-      <!-- Card 7: Tartan Mug -->
-      <article class="havenly-card" data-cat="holiday mugs" data-price="18.95">
-        <div class="card-photo-wrap">
-          <span class="floating-sale-tag">Fireside</span>
-          <img src="./images/tartan-mug.jpg" alt="Tartan Rocking Horse 11oz Christmas Mug" loading="lazy" decoding="async" />
-        </div>
-        <div class="card-info">
-          <h3 class="card-title">Tartan Rocking Horse 11oz Mug</h3>
-          <p class="card-desc">Cozy fireside 11oz ceramic mug featuring our Black Watch tartan equestrian rocking horse.</p>
-          <div class="card-specs-row">
-            <span class="spec-item"><span class="spec-icon">&#9749;</span> 11oz Ceramic</span>
-            <span class="spec-item"><span class="spec-icon">&#129532;</span> Dishwasher Safe</span>
-            <span class="spec-item"><span class="spec-icon">&#128293;</span> Fireside Pick</span>
-          </div>
-          <div class="card-footer-row">
-            <div class="card-price">$18.95 <span></span></div>
-            <a class="card-arrow-btn" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_11oz_mug-256771995567920169?rf=238181835450951105" target="_blank" rel="noopener" aria-label="View Tartan Mug on Zazzle">&rarr;</a>
-          </div>
+      <!-- Product 7 -->
+      <article class="catalog-card" data-cat="holiday mugs">
+        <a class="catalog-photo" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_11oz_mug-256771995567920169?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/tartan-mug.jpg" alt="Tartan Rocking Horse 11oz Christmas Mug" loading="lazy" />
+        </a>
+        <h3>Tartan Rocking Horse Mug</h3>
+        <p>Warm fireside ceramic mug featuring our heirloom Black Watch equestrian horse.</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$18.95</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_11oz_mug-256771995567920169?rf=238181835450951105" target="_blank" rel="noopener">View Mug &rarr;</a>
         </div>
       </article>
 
-      <!-- Card 8: Tartan Wrap -->
-      <article class="havenly-card" data-cat="holiday" data-price="21.50">
-        <div class="card-photo-wrap">
-          <span class="floating-sale-tag">Papercraft</span>
-          <img src="./images/tartan-wrap.jpg" alt="Tartan Rocking Horse Wrapping Paper" loading="lazy" decoding="async" />
-        </div>
-        <div class="card-info">
-          <h3 class="card-title">Tartan Rocking Horse Gift Wrap</h3>
-          <p class="card-desc">Seamless repeating tartan rocking horse gift wrap printed on heavyweight matte or satin rolls.</p>
-          <div class="card-specs-row">
-            <span class="spec-item"><span class="spec-icon">&#127873;</span> Heavy 60lb</span>
-            <span class="spec-item"><span class="spec-icon">&#128207;</span> Full Roll</span>
-            <span class="spec-item"><span class="spec-icon">&#127807;</span> FSC Paper</span>
-          </div>
-          <div class="card-footer-row">
-            <div class="card-price">$21.50 <span>/ roll</span></div>
-            <a class="card-arrow-btn" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_wrap_wrapping_paper-256922898737242657?rf=238181835450951105" target="_blank" rel="noopener" aria-label="Shop Gift Wrap on Zazzle">&rarr;</a>
-          </div>
+      <!-- Product 8 -->
+      <article class="catalog-card" data-cat="holiday">
+        <a class="catalog-photo" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_wrap_wrapping_paper-256922898737242657?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/tartan-wrap.jpg" alt="Tartan Rocking Horse Wrapping Paper" loading="lazy" />
+        </a>
+        <h3>Tartan Rocking Horse Wrap</h3>
+        <p>Seamless repeating tartan rocking horse gift wrap on heavy 60lb satin rolls.</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$21.50 / roll</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/tartan_rocking_horse_vintage_christmas_wrap_wrapping_paper-256922898737242657?rf=238181835450951105" target="_blank" rel="noopener">Shop Wrap &rarr;</a>
         </div>
       </article>
 
-      <!-- Card 9: Ceramics Mug -->
-      <article class="havenly-card" data-cat="mugs" data-price="18.95">
-        <div class="card-photo-wrap">
-          <span class="floating-sale-tag">Artisan</span>
-          <img src="./images/ceramics-mug.jpg" alt="Kiln and Clay Artisan Ceramics 11oz Mug" loading="lazy" decoding="async" />
-        </div>
-        <div class="card-info">
-          <h3 class="card-title">Kiln &amp; Clay Ceramics 11oz Mug</h3>
-          <p class="card-desc">Linocut stoneware vases and speckled mug illustration crafted for pottery studio lovers.</p>
-          <div class="card-specs-row">
-            <span class="spec-item"><span class="spec-icon">&#9749;</span> 11oz Mug</span>
-            <span class="spec-item"><span class="spec-icon">&#127912;</span> Linocut Art</span>
-            <span class="spec-item"><span class="spec-icon">&#129532;</span> Lead-Free</span>
-          </div>
-          <div class="card-footer-row">
-            <div class="card-price">$18.95 <span></span></div>
-            <a class="card-arrow-btn" href="https://www.zazzle.com/wheel_thrown_artisan_ceramics_studio_11oz_mug-256335302192274870?rf=238181835450951105" target="_blank" rel="noopener" aria-label="View Ceramics Mug on Zazzle">&rarr;</a>
-          </div>
+      <!-- Product 9 -->
+      <article class="catalog-card" data-cat="mugs">
+        <a class="catalog-photo" href="https://www.zazzle.com/wheel_thrown_artisan_ceramics_studio_11oz_mug-256335302192274870?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/ceramics-mug.jpg" alt="Kiln & Clay Ceramics 11oz Mug" loading="lazy" />
+        </a>
+        <h3>Kiln &amp; Clay Ceramics Mug</h3>
+        <p>Linocut stoneware vases and speckled mug artwork crafted for pottery devotees.</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$18.95</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/wheel_thrown_artisan_ceramics_studio_11oz_mug-256335302192274870?rf=238181835450951105" target="_blank" rel="noopener">View Mug &rarr;</a>
         </div>
       </article>
 
-      <!-- Card 10: Bookshop Tee -->
-      <article class="havenly-card" data-cat="apparel" data-price="24.50">
-        <div class="card-photo-wrap">
-          <span class="floating-sale-tag">Bookish</span>
-          <img src="./images/bookshop-tee.jpg" alt="Oolong and Paperbacks Bookshop T-Shirt" loading="lazy" decoding="async" />
-        </div>
-        <div class="card-info">
-          <h3 class="card-title">Oolong &amp; Paperbacks Tee</h3>
-          <p class="card-desc">Cast-iron teapot, open vintage book, and autumn leaves printed on soft unisex cotton.</p>
-          <div class="card-specs-row">
-            <span class="spec-item"><span class="spec-icon">&#128085;</span> Ring-Spun</span>
-            <span class="spec-item"><span class="spec-icon">&#128214;</span> Reader Gift</span>
-            <span class="spec-item"><span class="spec-icon">&#10024;</span> Pre-Shrunk</span>
-          </div>
-          <div class="card-footer-row">
-            <div class="card-price">$24.50 <span></span></div>
-            <a class="card-arrow-btn" href="https://www.zazzle.com/quiet_afternoon_bookshop_and_loose_leaf_tea_t_shirt-256820755168302251?rf=238181835450951105" target="_blank" rel="noopener" aria-label="View Bookshop Tee on Zazzle">&rarr;</a>
-          </div>
+      <!-- Product 10 -->
+      <article class="catalog-card" data-cat="apparel">
+        <a class="catalog-photo" href="https://www.zazzle.com/quiet_afternoon_bookshop_and_loose_leaf_tea_t_shirt-256820755168302251?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/bookshop-tee.jpg" alt="Oolong & Paperbacks Bookshop Tee" loading="lazy" />
+        </a>
+        <h3>Oolong &amp; Paperbacks Tee</h3>
+        <p>Steaming cast-iron teapot, open vintage volume, and autumn foliage on soft cotton.</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$24.50</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/quiet_afternoon_bookshop_and_loose_leaf_tea_t_shirt-256820755168302251?rf=238181835450951105" target="_blank" rel="noopener">View Shirt &rarr;</a>
         </div>
       </article>
 
-      <!-- Card 11: Espresso Poster -->
-      <article class="havenly-card" data-cat="stationery" data-price="28.00">
-        <div class="card-photo-wrap">
-          <span class="floating-sale-tag">Wall Art</span>
-          <img src="./images/espresso-poster.jpg" alt="Il Portafiltro Retro Espresso 18x24 Poster" loading="lazy" decoding="async" />
-        </div>
-        <div class="card-info">
-          <h3 class="card-title">Il Portafiltro Espresso Poster</h3>
-          <p class="card-desc">Mid-century Italian lever espresso machine 18&times;24 print in olive green, cream, and terracotta.</p>
-          <div class="card-specs-row">
-            <span class="spec-item"><span class="spec-icon">&#128444;</span> 18&times;24 Heavy</span>
-            <span class="spec-item"><span class="spec-icon">&#9749;</span> Coffee Bar</span>
-            <span class="spec-item"><span class="spec-icon">&#10024;</span> Archival Pigment</span>
-          </div>
-          <div class="card-footer-row">
-            <div class="card-price">$28.00 <span></span></div>
-            <a class="card-arrow-btn" href="https://www.zazzle.com/il_portafiltro_retro_italian_espresso_corner_18x24_poster-256119663298023232?rf=238181835450951105" target="_blank" rel="noopener" aria-label="View Espresso Poster on Zazzle">&rarr;</a>
-          </div>
+      <!-- Product 11 -->
+      <article class="catalog-card" data-cat="stationery">
+        <a class="catalog-photo" href="https://www.zazzle.com/il_portafiltro_retro_italian_espresso_corner_18x24_poster-256119663298023232?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/espresso-poster.jpg" alt="Il Portafiltro Retro Espresso Poster" loading="lazy" />
+        </a>
+        <h3>Il Portafiltro Espresso Poster</h3>
+        <p>Italian lever espresso machine 18&times;24 print in olive green, cream, and terracotta.</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$28.00</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/il_portafiltro_retro_italian_espresso_corner_18x24_poster-256119663298023232?rf=238181835450951105" target="_blank" rel="noopener">View Print &rarr;</a>
         </div>
       </article>
 
-      <!-- Card 12: Sourdough Tee -->
-      <article class="havenly-card" data-cat="apparel" data-price="24.50">
-        <div class="card-photo-wrap">
-          <span class="floating-sale-tag">Baker Pick</span>
-          <img src="./images/sourdough-tee.jpg" alt="Wild Yeast and Wheat Sourdough T-Shirt" loading="lazy" decoding="async" />
-        </div>
-        <div class="card-info">
-          <h3 class="card-title">Wild Yeast &amp; Wheat Tee</h3>
-          <p class="card-desc">Woodcut scored boule sourdough loaf on a wooden peel framed by organic golden wheat stalks.</p>
-          <div class="card-specs-row">
-            <span class="spec-item"><span class="spec-icon">&#128085;</span> 100% Cotton</span>
-            <span class="spec-item"><span class="spec-icon">&#127838;</span> Baker Gift</span>
-            <span class="spec-item"><span class="spec-icon">&#10024;</span> Screenprinted</span>
-          </div>
-          <div class="card-footer-row">
-            <div class="card-price">$24.50 <span></span></div>
-            <a class="card-arrow-btn" href="https://www.zazzle.com/wild_yeast_and_wheat_sourdough_bakehouse_t_shirt-256398671135712299?rf=238181835450951105" target="_blank" rel="noopener" aria-label="View Sourdough Tee on Zazzle">&rarr;</a>
-          </div>
+      <!-- Product 12 -->
+      <article class="catalog-card" data-cat="apparel">
+        <a class="catalog-photo" href="https://www.zazzle.com/wild_yeast_and_wheat_sourdough_bakehouse_t_shirt-256398671135712299?rf=238181835450951105" target="_blank" rel="noopener">
+          <img src="./images/sourdough-tee.jpg" alt="Wild Yeast and Wheat Sourdough Tee" loading="lazy" />
+        </a>
+        <h3>Wild Yeast &amp; Wheat Tee</h3>
+        <p>Hand-carved woodcut scored sourdough boule framed by organic golden wheat stalks.</p>
+        <div class="catalog-bottom-row">
+          <span class="catalog-price">$24.50</span>
+          <a class="catalog-cta" href="https://www.zazzle.com/wild_yeast_and_wheat_sourdough_bakehouse_t_shirt-256398671135712299?rf=238181835450951105" target="_blank" rel="noopener">View Shirt &rarr;</a>
         </div>
       </article>
 
     </div>
   </section>
 
-  <!-- Section: Testimonials (Havenly Exact Vibe) -->
-  <section id="testimonials" class="section-testimonials">
-    <div class="testimonials-grid">
+  <!-- Full-Bleed Editorial Banner: "A Brighter Kinder Winter" -->
+  <section id="editorial" class="editorial-statement-section">
+    <div class="editorial-statement-card">
+      <div class="statement-bg">
+        <img src="./images/tartan-wrap.jpg" alt="A Brighter Kinder Winter" loading="lazy" />
+      </div>
+      <div class="statement-overlay"></div>
+
+      <div class="statement-textbox">
+        <h2>A Brighter<br />Kinder Winter</h2>
+        <p>Invest in pieces that last &mdash; for your wardrobe, your holiday home, and a more thoughtful tomorrow. Small-batch gouache and woodcut heirlooms printed on demand.</p>
+        <a class="btn-dark-editorial" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Our Commitment &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial Journal (Articles) -->
+  <section class="journal-section">
+    <div class="journal-head">
       <div>
-        <div class="pill-badge">
-          <span class="pill-dot"></span>
-          <span>Testimonials</span>
-        </div>
-        <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.3rem,3.8vw,3.2rem);font-weight:500;line-height:1.15;letter-spacing:-0.02em;color:var(--forest);margin-bottom:0.75rem;">What Our Clients Say</h2>
-        <p style="font-size:1.02rem;color:var(--ink-muted);line-height:1.6;margin-bottom:2rem;max-width:440px;">Real stories from happy gift givers, holiday hosts, and art collectors across the United States.</p>
-        <a class="btn-pill-dark" href="#catalog">Read More Reviews &rarr;</a>
+        <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-muted);display:block;margin-bottom:0.4rem;">The Seasonal Journal</span>
+        <h2>Curated Stories &amp; Guides</h2>
       </div>
-
-      <div class="testimonial-cards-row">
-        <!-- Testimonial 1 -->
-        <div class="testi-card">
-          <div class="testi-quote-mark">&ldquo;</div>
-          <p class="testi-text">&ldquo;The cardstock on the Pinkmas cards felt like luxury letterpress stationery. Our recipients immediately texted asking where we got them!&rdquo;</p>
-          <div class="testi-author">
-            <div class="testi-avatar">SM</div>
-            <div class="testi-meta">
-              <div class="testi-name">Sarah El Mansouri</div>
-              <div class="testi-city">Casablanca / Boston</div>
-              <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 2 -->
-        <div class="testi-card">
-          <div class="testi-quote-mark">&ldquo;</div>
-          <p class="testi-text">&ldquo;Responsive, high-grade ceramic quality, and truly unique artwork. The Tartan Rocking Horse mugs made our Christmas morning breakfast complete.&rdquo;</p>
-          <div class="testi-author">
-            <div class="testi-avatar">KB</div>
-            <div class="testi-meta">
-              <div class="testi-name">Karim Benali</div>
-              <div class="testi-city">Rabat / New York</div>
-              <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 3 -->
-        <div class="testi-card">
-          <div class="testi-quote-mark">&ldquo;</div>
-          <p class="testi-text">&ldquo;An exceptional gift experience from start to finish. The Zazzle customizer worked smoothly, and packaging was sturdy and pristine.&rdquo;</p>
-          <div class="testi-author">
-            <div class="testi-avatar">FZ</div>
-            <div class="testi-meta">
-              <div class="testi-name">Fatima Zahra</div>
-              <div class="testi-city">Marrakech / Chicago</div>
-              <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section: Editorial Journal & Guides -->
-  <section class="section-journal">
-    <div class="section-header-row">
-      <div class="section-title-wrap">
-        <div class="pill-badge">
-          <span class="pill-dot"></span>
-          <span>From Our Journal</span>
-        </div>
-        <h2>Curated Gift Guides &amp; Stories</h2>
-        <p>In-depth US buyer guides, personalization walkthroughs, and seasonal pairings.</p>
-      </div>
-      <a class="btn-pill-dark" href="/blog.html">Read All 18 Articles &rarr;</a>
+      <a class="arrivals-view-all" href="/blog.html">Read All 18 Articles &rarr;</a>
     </div>
 
-    <div class="journal-grid">
-      <article class="journal-card">
-        <div class="journal-tag">Holiday Guide</div>
+    <div class="journal-articles-grid">
+      <article class="journal-entry">
+        <span class="journal-cat">Holiday Guide</span>
         <h3>Pinkmas Coquette Christmas Mug Buyer Guide</h3>
-        <p>How to style and customize blush coquette bow tree ceramic mugs and matching holiday pairings on Zazzle.</p>
-        <a class="journal-link" href="/articles/pinkmas-coquette-christmas-mug.html">Read Article &rarr;</a>
+        <p>How to style and customize blush coquette bow tree ceramic mugs and matching seasonal pairings on Zazzle.</p>
+        <a class="read-btn" href="/articles/pinkmas-coquette-christmas-mug.html">Read Story &rarr;</a>
       </article>
 
-      <article class="journal-card">
-        <div class="journal-tag">Heirloom Tradition</div>
+      <article class="journal-entry">
+        <span class="journal-cat">Heirloom Tradition</span>
         <h3>Old Money Christmas Card: Tartan Keepsakes</h3>
         <p>Explore Black Watch tartan rocking horse cards, ceramic ornaments, and luxury wrapping paper pairings.</p>
-        <a class="journal-link" href="/articles/old-money-christmas-card.html">Read Article &rarr;</a>
+        <a class="read-btn" href="/articles/old-money-christmas-card.html">Read Story &rarr;</a>
       </article>
 
-      <article class="journal-card">
-        <div class="journal-tag">Barware &amp; Host</div>
-        <h3>Dirty Martini Christmas Tee &amp; Cocktail Host Gifts</h3>
-        <p>Retro mid-century cocktail party outfits, bar cart mugs, and festive hostess gift ideas for seasonal celebrations.</p>
-        <a class="journal-link" href="/articles/dirty-martini-christmas-tee.html">Read Article &rarr;</a>
+      <article class="journal-entry">
+        <span class="journal-cat">Cocktail Club</span>
+        <h3>Dirty Martini Christmas Tee &amp; Host Gifts</h3>
+        <p>Retro mid-century cocktail party outfits, bar cart mugs, and festive hostess gift ideas for celebrations.</p>
+        <a class="read-btn" href="/articles/dirty-martini-christmas-tee.html">Read Story &rarr;</a>
       </article>
 
-      <article class="journal-card">
-        <div class="journal-tag">Tree Decor</div>
-        <h3>Tartan Rocking Horse Ceramic Keepsake Ornament</h3>
+      <article class="journal-entry">
+        <span class="journal-cat">Tree Keepsake</span>
+        <h3>Tartan Rocking Horse Ceramic Ornament</h3>
         <p>Personalize a classic Black Watch plaid ceramic keepsake ornament for traditional US holiday Christmas trees.</p>
-        <a class="journal-link" href="/articles/tartan-rocking-horse-ceramic-ornament.html">Read Article &rarr;</a>
+        <a class="read-btn" href="/articles/tartan-rocking-horse-ceramic-ornament.html">Read Story &rarr;</a>
       </article>
     </div>
   </section>
 
-  <!-- Deep Forest Luxury Footer (Havenly Exact Vibe) -->
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-columns">
-        <div class="footer-brand">
-          <h3>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/>
-              <polyline points="9 22 9 12 15 12 15 22"/>
-            </svg>
-            Grimora11
-          </h3>
-          <p>Building timeless keepsakes, one holiday at a time. Original gouache, woodcut, and vintage editorial merchandise printed on demand.</p>
-          <div class="social-links">
-            <a class="social-btn" href="https://www.pinterest.com/rafafo1225/" target="_blank" rel="noopener" aria-label="Pinterest">P</a>
-            <a class="social-btn" href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener" aria-label="Zazzle">Z</a>
-            <a class="social-btn" href="/blog.html" aria-label="Journal">J</a>
+  <!-- Lumière Editorial Footer -->
+  <footer class="lumiere-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>LUMI&Egrave;RE</h3>
+          <p>Quiet luxury and timeless essentials for a thoughtful winter. Original gouache, woodcut, and vintage editorial merchandise printed on demand.</p>
+          <div style="display:flex;gap:1.2rem;font-size:0.8rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;">
+            <a href="https://www.pinterest.com/rafafo1225/" target="_blank" rel="noopener">Pinterest</a>
+            <a href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Zazzle</a>
+            <a href="/blog.html">Journal</a>
           </div>
         </div>
 
-        <div class="footer-nav-col">
-          <h4>Quick Links</h4>
-          <ul class="footer-links-list">
-            <li><a href="./">Home</a></li>
-            <li><a href="#catalog">Collections</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="/blog.html">Journal &amp; Guides</a></li>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links-col">
+            <li><a href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Orders &amp; Returns</a></li>
+            <li><a href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Shipping Information</a></li>
+            <li><a href="/editorial-standards.html">Customization Guide</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
           </ul>
         </div>
 
-        <div class="footer-nav-col">
-          <h4>Product Types</h4>
-          <ul class="footer-links-list">
-            <li><a href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Holiday Cards</a></li>
-            <li><a href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Ceramic Mugs</a></li>
-            <li><a href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Graphic Apparel</a></li>
-            <li><a href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Tree Ornaments</a></li>
-            <li><a href="https://www.zazzle.com/store/grimora11?rf=238181835450951105" target="_blank" rel="noopener">Art Prints &amp; Wrap</a></li>
+        <div class="footer-col">
+          <h4>Collections</h4>
+          <ul class="footer-links-col">
+            <li><a href="#catalog" data-nav="holiday">Holiday Cards</a></li>
+            <li><a href="#catalog" data-nav="mugs">Artisan Mugs</a></li>
+            <li><a href="#catalog" data-nav="apparel">Winter Graphic Tees</a></li>
+            <li><a href="#catalog" data-nav="stationery">Ceramic Ornaments</a></li>
+            <li><a href="#catalog" data-nav="stationery">Luxury Gift Wrap</a></li>
           </ul>
         </div>
 
-        <div class="footer-newsletter">
-          <h4>Subscribe to Our Journal</h4>
-          <p>Get the latest holiday releases, styling tips, and new artwork alerts.</p>
-          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Grimora11 Journal!'); this.reset();">
-            <input class="newsletter-input" type="email" placeholder="Your email address" required aria-label="Your email address" />
-            <button class="newsletter-submit" type="submit" aria-label="Subscribe">&rarr;</button>
+        <div class="footer-col">
+          <h4>Stay in Touch</h4>
+          <p>Subscribe to receive seasonal stories, exclusive previews, and quiet winter inspiration.</p>
+          <form class="footer-newsletter-box" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Lumière.'); this.reset();">
+            <input type="email" placeholder="Your email address" required aria-label="Email address" />
+            <button type="submit" aria-label="Subscribe">&rarr;</button>
           </form>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 Grimora11. All rights reserved. Fulfilled in the USA via Zazzle.</p>
-        <div class="footer-bottom-links">
+      <div class="footer-legal-bar">
+        <div>&copy; 2026 LUMI&Egrave;RE GRIMORA. All rights reserved. Fulfilled in the USA via Zazzle.</div>
+        <div class="footer-legal-links">
           <a href="/privacy-policy.html">Privacy Policy</a>
-          <a href="/editorial-standards.html">Terms &amp; Disclosure</a>
-          <a href="/contact.html">Contact Us</a>
+          <a href="/editorial-standards.html">Terms of Service</a>
+          <a href="/contact.html">Contact</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Interactive Filtering & Arrow Controls Script -->
+  <!-- Interactive Search and Category Filters -->
   <script>
     (function(){
-      const catButtons = document.querySelectorAll('.cat-tab-btn');
-      const cards = document.querySelectorAll('.havenly-card');
-      const selectType = document.getElementById('selectType');
-      const selectPrice = document.getElementById('selectPrice');
-      const selectOccasion = document.getElementById('selectOccasion');
-      const quickSearchBtn = document.getElementById('quickSearchBtn');
+      const catButtons = document.querySelectorAll('.cat-btn');
+      const cards = document.querySelectorAll('.catalog-card');
+      const navLinks = document.querySelectorAll('[data-nav]');
+      const searchInput = document.getElementById('storeSearchInput');
 
-      function applyFilter(catFilter, priceFilter, occasionFilter) {
+      function filterCategory(cat) {
+        catButtons.forEach(b => b.classList.toggle('active', b.dataset.filter === cat));
         cards.forEach(card => {
           const cats = (card.dataset.cat || '').toLowerCase().split(' ');
-          const price = parseFloat(card.dataset.price || '0');
-
-          let matchesCat = (catFilter === 'all') || cats.includes(catFilter.toLowerCase());
-          let matchesPrice = true;
-          if (priceFilter === 'under10') matchesPrice = (price < 10);
-          else if (priceFilter === 'under20') matchesPrice = (price < 20);
-          else if (priceFilter === 'over20') matchesPrice = (price >= 20);
-
-          let matchesOccasion = true;
-          if (occasionFilter === 'holiday') matchesOccasion = cats.includes('holiday');
-          else if (occasionFilter === 'everyday') matchesOccasion = !cats.includes('holiday');
-
-          card.classList.toggle('hidden', !(matchesCat && matchesPrice && matchesOccasion));
+          const matches = (cat === 'all') || cats.includes(cat.toLowerCase());
+          card.classList.toggle('hidden', !matches);
         });
       }
 
       catButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-          catButtons.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          const filter = btn.dataset.filter;
-          if (selectType) selectType.value = filter;
-          applyFilter(filter, selectPrice ? selectPrice.value : 'all', selectOccasion ? selectOccasion.value : 'all');
+          filterCategory(btn.dataset.filter);
         });
       });
 
-      if (quickSearchBtn) {
-        quickSearchBtn.addEventListener('click', () => {
-          const cat = selectType ? selectType.value : 'all';
-          const price = selectPrice ? selectPrice.value : 'all';
-          const occasion = selectOccasion ? selectOccasion.value : 'all';
-          catButtons.forEach(b => b.classList.toggle('active', b.dataset.filter === cat));
-          applyFilter(cat, price, occasion);
-          const catalogEl = document.getElementById('catalog');
-          if (catalogEl) catalogEl.scrollIntoView({ behavior: 'smooth' });
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          const cat = link.dataset.nav;
+          if (cat) {
+            filterCategory(cat);
+          }
         });
-      }
+      });
 
-      // Next / Prev category arrows
-      const prevBtn = document.getElementById('prevCardBtn');
-      const nextBtn = document.getElementById('nextCardBtn');
-      if (prevBtn && nextBtn) {
-        const catList = Array.from(catButtons);
-        function cycleTab(offset) {
-          const activeIdx = catList.findIndex(b => b.classList.contains('active'));
-          let nextIdx = (activeIdx + offset + catList.length) % catList.length;
-          catList[nextIdx].click();
-        }
-        prevBtn.addEventListener('click', () => cycleTab(-1));
-        nextBtn.addEventListener('click', () => cycleTab(1));
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const query = e.target.value.toLowerCase().trim();
+          catButtons.forEach(b => b.classList.toggle('active', b.dataset.filter === 'all'));
+          cards.forEach(card => {
+            const text = card.textContent.toLowerCase();
+            card.classList.toggle('hidden', query.length > 0 && !text.includes(query));
+          });
+          const catEl = document.getElementById('catalog');
+          if (catEl && query.length > 2) {
+            catEl.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
       }
     })();
   </script>
