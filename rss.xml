@@ -1,117 +1,351 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>DARKSHOD — Curated US Gift Guides</title>
     <link>https://darkshod.github.io/</link>
     <description>Thoughtful Gift Guides, Custom Stationery &amp; Artisan Home Finds</description>
     <language>en-us</language>
     <item>
+      <title>10 Viral Vintage Graphic Tees Under $20: Curated 2026 Holiday Gift Guide</title>
+      <link>https://darkshod.github.io/articles/10-viral-vintage-graphic-tees-under-20-gift-guide.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/10-viral-vintage-graphic-tees-under-20-gift-guide.html</guid>
+      <pubDate>Sun, 22 Nov 2026 14:00:00 GMT</pubDate>
+      <description>Shop all 10 trending vintage graphic tees under $20 on Zazzle — from Après Ski Social Club and Sunday Pace Run Club to Dark Academia Skeleton &amp; Botanical Tomatoes ($18.04 promo).</description>
+      <enclosure url="https://darkshod.github.io/images/pins/pin-roundup-10-viral-tees-under-20.jpg" length="360940" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/pins/pin-roundup-10-viral-tees-under-20.jpg" type="image/jpeg" medium="image" width="1000" height="1500" />
+    </item>
+    <item>
+      <title>5 Cozy Bookworm &amp; Dark Academia Gifts Under $20 (2026 Gift List)</title>
+      <link>https://darkshod.github.io/articles/cozy-bookworm-dark-academia-gifts-under-20.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/cozy-bookworm-dark-academia-gifts-under-20.html</guid>
+      <pubDate>Sun, 22 Nov 2026 13:00:00 GMT</pubDate>
+      <description>Curated book lover gifts under $20 on Zazzle: Read Books Avoid People Skeleton Tee ($18.04), Archivist Owl Tarot Tee ($18.04), Midnight Chapter Globe Tee ($18.04), Book Stickers ($7.50) &amp; Celestial Ornament ($16.95).</description>
+      <enclosure url="https://darkshod.github.io/images/pins/pin-roundup-cozy-bookworm-gifts-under-20.jpg" length="362639" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/pins/pin-roundup-cozy-bookworm-gifts-under-20.jpg" type="image/jpeg" medium="image" width="1000" height="1500" />
+    </item>
+    <item>
+      <title>7 Funny Coworker, Teacher &amp; Coffee Gifts Under $20 (2026 Holiday Guide)</title>
+      <link>https://darkshod.github.io/articles/funny-coworker-teacher-coffee-gifts-under-20.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/funny-coworker-teacher-coffee-gifts-under-20.html</guid>
+      <pubDate>Sun, 22 Nov 2026 12:00:00 GMT</pubDate>
+      <description>Secret Santa, teacher appreciation, and desk gift ideas under $20 on Zazzle: Surviving December Tee ($18.04), Caffeine Frog Tee ($18.04), Retro Money Tee ($18.04) &amp; artisan ceramic mugs ($18.95).</description>
+      <enclosure url="https://darkshod.github.io/images/pins/pin-roundup-funny-coworker-teacher-coffee-gifts.jpg" length="354860" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/pins/pin-roundup-funny-coworker-teacher-coffee-gifts.jpg" type="image/jpeg" medium="image" width="1000" height="1500" />
+    </item>
+    <item>
+      <title>The Archivist Midnight Library Owl Tarot Tee: Curated 2026 Scholar Gift Guide</title>
+      <link>https://darkshod.github.io/articles/archivist-midnight-library-owl-tarot-shirt.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/archivist-midnight-library-owl-tarot-shirt.html</guid>
+      <pubDate>Sun, 22 Nov 2026 11:00:00 GMT</pubDate>
+      <description>Shop &amp; customize The Archivist Midnight Library Owl Celestial Tarot T-Shirt ($18.04 promo on Zazzle) — midnight indigo &amp; antique gold tarot owl print.</description>
+      <enclosure url="https://darkshod.github.io/images/pins/pin-43-archivist-owl-tarot.jpg" length="290344" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/pins/pin-43-archivist-owl-tarot.jpg" type="image/jpeg" medium="image" width="1000" height="1500" />
+    </item>
+    <item>
+      <title>Leave Me Alone My Tomatoes Need Me Tee: Curated 2026 Gardener Gift Guide</title>
+      <link>https://darkshod.github.io/articles/leave-me-alone-my-tomatoes-need-me-shirt.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/leave-me-alone-my-tomatoes-need-me-shirt.html</guid>
+      <pubDate>Sun, 22 Nov 2026 10:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Leave Me Alone My Tomatoes Need Me Heirloom Garden T-Shirt ($18.04 promo on Zazzle) — 1970s botanical plate vine of ribbed tomatoes.</description>
+      <enclosure url="https://darkshod.github.io/images/pins/pin-42-leave-me-alone-tomatoes.jpg" length="281791" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/pins/pin-42-leave-me-alone-tomatoes.jpg" type="image/jpeg" medium="image" width="1000" height="1500" />
+    </item>
+    <item>
+      <title>Read Books Avoid People Cozy Skeleton Tee: Curated 2026 Bookworm Gift Guide</title>
+      <link>https://darkshod.github.io/articles/read-books-avoid-people-skeleton-shirt.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/read-books-avoid-people-skeleton-shirt.html</guid>
+      <pubDate>Sun, 22 Nov 2026 09:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Read Books Avoid People Cozy Skeleton Bookworm Tee ($18.04 promo on Zazzle) — woodcut cardigan skeleton reading in a library armchair.</description>
+      <enclosure url="https://darkshod.github.io/images/pins/pin-41-read-books-avoid-people.jpg" length="294885" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/pins/pin-41-read-books-avoid-people.jpg" type="image/jpeg" medium="image" width="1000" height="1500" />
+    </item>
+    <item>
+      <title>Surviving December On Coffee And Patience Tee: Curated 2026 Holiday Gift Guide</title>
+      <link>https://darkshod.github.io/articles/surviving-december-coffee-patience-holiday-shirt.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/surviving-december-coffee-patience-holiday-shirt.html</guid>
+      <pubDate>Sun, 22 Nov 2026 08:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Surviving December On Coffee And Patience Holiday T-Shirt ($18.04 promo on Zazzle) — retro holiday stoneware mug, pine boughs &amp; pencils.</description>
+      <enclosure url="https://darkshod.github.io/images/pins/pin-40-surviving-december-teacher.jpg" length="294956" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/pins/pin-40-surviving-december-teacher.jpg" type="image/jpeg" medium="image" width="1000" height="1500" />
+    </item>
+    <item>
+      <title>Sunday Pace Post Run Pastries Run Club Tee: Curated 2026 Fitness Gift Guide</title>
+      <link>https://darkshod.github.io/articles/sunday-pace-post-run-pastries-shirt.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/sunday-pace-post-run-pastries-shirt.html</guid>
+      <pubDate>Sun, 22 Nov 2026 07:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Sunday Pace Post Run Pastries Run Club Graphic Tee ($18.04 promo on Zazzle) — winged retro running sneaker, iced latte &amp; croissant print.</description>
+      <enclosure url="https://darkshod.github.io/images/pins/pin-39-sunday-pace-run-club.jpg" length="287236" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/pins/pin-39-sunday-pace-run-club.jpg" type="image/jpeg" medium="image" width="1000" height="1500" />
+    </item>
+    <item>
+      <title>Sunday Matcha And Pilates Club Retro Graphic Tee: Curated 2026 Lifestyle Guide</title>
+      <link>https://darkshod.github.io/articles/sunday-matcha-pilates-club-retro-graphic-shirt.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/sunday-matcha-pilates-club-retro-graphic-shirt.html</guid>
+      <pubDate>Sun, 22 Nov 2026 06:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Sunday Matcha And Pilates Club Retro Graphic Tee ($18.04 promo on Zazzle) — cobalt blue &amp; cherry red iced matcha whisk emblem.</description>
+      <enclosure url="https://darkshod.github.io/images/sunday-matcha-pilates-club-flatlay.jpg" length="107992" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/sunday-matcha-pilates-club-flatlay.jpg" type="image/jpeg" medium="image" width="736" height="913" />
+    </item>
+    <item>
+      <title>Running On Caffeine Audacity Woodcut Frog Tee: Curated 2026 Humor Guide</title>
+      <link>https://darkshod.github.io/articles/running-on-caffeine-audacity-woodcut-frog-shirt.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/running-on-caffeine-audacity-woodcut-frog-shirt.html</guid>
+      <pubDate>Sun, 22 Nov 2026 05:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Running On Caffeine Audacity Woodcut Frog Tee ($18.04 promo on Zazzle) — carved linocut beanie frog holding steaming espresso.</description>
+      <enclosure url="https://darkshod.github.io/images/caffeine-audacity-frog-flatlay.jpg" length="108112" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/caffeine-audacity-frog-flatlay.jpg" type="image/jpeg" medium="image" width="736" height="913" />
+    </item>
+    <item>
+      <title>Too Cozy For Winter Retro 90s Holiday Cat Shirt: Curated 2026 Gift Guide</title>
+      <link>https://darkshod.github.io/articles/too-cozy-for-winter-retro-90s-holiday-cat-shirt.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/too-cozy-for-winter-retro-90s-holiday-cat-shirt.html</guid>
+      <pubDate>Sun, 22 Nov 2026 04:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Too Cozy For Winter Retro 90s Holiday Cat Shirt ($18.04 promo on Zazzle) — chilled winter cat in sunglasses &amp; plaid scarf holding cocoa.</description>
+      <enclosure url="https://darkshod.github.io/images/too-cozy-for-winter-cat-flatlay.jpg" length="109559" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/too-cozy-for-winter-cat-flatlay.jpg" type="image/jpeg" medium="image" width="736" height="913" />
+    </item>
+    <item>
+      <title>Midnight Chapter Society Retro Globe Book Tee: Curated 2026 Bookish Guide</title>
+      <link>https://darkshod.github.io/articles/midnight-chapter-society-retro-globe-book-shirt.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/midnight-chapter-society-retro-globe-book-shirt.html</guid>
+      <pubDate>Sun, 22 Nov 2026 03:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Midnight Chapter Society Retro Globe Book Tee ($18.04 promo on Zazzle) — Y2K wireframe Earth globe &amp; book emblem in forest green.</description>
+      <enclosure url="https://darkshod.github.io/images/midnight-chapter-book-club-flatlay.jpg" length="107622" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/midnight-chapter-book-club-flatlay.jpg" type="image/jpeg" medium="image" width="736" height="913" />
+    </item>
+    <item>
+      <title>Apres Ski Social Club Vintage Chalet T-Shirt: Curated 2026 Winter Guide</title>
+      <link>https://darkshod.github.io/articles/apres-ski-social-club-vintage-chalet-shirt.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/apres-ski-social-club-vintage-chalet-shirt.html</guid>
+      <pubDate>Sun, 22 Nov 2026 02:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Apres Ski Social Club Vintage Chalet T-Shirt ($18.04 promo on Zazzle) — woodblock ski chalet &amp; crossed skis in forest green and terracotta.</description>
+      <enclosure url="https://darkshod.github.io/images/apres-ski-social-club-flatlay.jpg" length="115281" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/apres-ski-social-club-flatlay.jpg" type="image/jpeg" medium="image" width="736" height="913" />
+    </item>
+    <item>
+      <title>Relax Nothing Is Under Control Cowboy Dog Shirt: Curated 2026 Apparel Guide</title>
+      <link>https://darkshod.github.io/articles/relax-nothing-is-under-control-cowboy-dog-shirt.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/relax-nothing-is-under-control-cowboy-dog-shirt.html</guid>
+      <pubDate>Sun, 22 Nov 2026 01:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Relax Nothing Is Under Control Cowboy Dog Shirt ($18.04 promo on Zazzle) — chilled cowboy dog in terracotta red &amp; evergreen ink.</description>
+      <enclosure url="https://darkshod.github.io/images/relax-cowboy-dog-sweatshirt-flatlay.jpg" length="99217" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/relax-cowboy-dog-sweatshirt-flatlay.jpg" type="image/jpeg" medium="image" width="736" height="913" />
+    </item>
+    <item>
+      <title>Invest In Yourself This Year Retro Money Shirt: Curated 2026 Apparel Guide</title>
+      <link>https://darkshod.github.io/articles/invest-in-yourself-this-year-retro-money-shirt.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/invest-in-yourself-this-year-retro-money-shirt.html</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Invest In Yourself This Year Retro Money Shirt ($18.04 promo on Zazzle) — rubber-hose cartoon money roll mascot in kelly green ink.</description>
+      <enclosure url="https://darkshod.github.io/images/invest-in-yourself-sweatshirt-flatlay.jpg" length="109032" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/invest-in-yourself-sweatshirt-flatlay.jpg" type="image/jpeg" medium="image" width="736" height="913" />
+    </item>
+    <item>
+      <title>Hard Not To Look When Topless Car Vintage Tee: Curated 2026 Apparel Guide</title>
+      <link>https://darkshod.github.io/articles/hard-not-to-look-when-topless-vintage-car-shirt.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/hard-not-to-look-when-topless-vintage-car-shirt.html</guid>
+      <pubDate>Sat, 21 Nov 2026 23:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Hard Not To Look When Topless Car Vintage Tee ($18.04 promo on Zazzle) — deep forest green vintage convertible roadster graphic on natural cotton.</description>
+      <enclosure url="https://darkshod.github.io/images/topless-convertible-sweatshirt-flatlay.jpg" length="105913" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/topless-convertible-sweatshirt-flatlay.jpg" type="image/jpeg" medium="image" width="736" height="913" />
+    </item>
+    <item>
+      <title>Executive Navy Gold Company Employee Name Badge: Curated 2026 B2B Branding Guide</title>
+      <link>https://darkshod.github.io/articles/executive-navy-gold-company-employee-name-badge.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/executive-navy-gold-company-employee-name-badge.html</guid>
+      <pubDate>Sat, 21 Nov 2026 22:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Executive Navy Gold Company Employee Name Badge ($6.93 on Zazzle) with magnetic fastener, brushed champagne trim &amp; editable employee fields.</description>
+      <enclosure url="https://darkshod.github.io/images/executive-navy-gold-name-badge.jpg" length="117815" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/executive-navy-gold-name-badge.jpg" type="image/jpeg" medium="image" width="736" height="913" />
+    </item>
+    <item>
+      <title>A Tini Bit Merry Martini Christmas Party Card: Curated 2026 Buyer &amp; Gift Guide</title>
+      <link>https://darkshod.github.io/articles/a-tini-bit-merry-martini-christmas-party-card.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/a-tini-bit-merry-martini-christmas-party-card.html</guid>
+      <pubDate>Sat, 21 Nov 2026 21:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the A Tini Bit Merry Martini Christmas Party Card ($2.21 per card on Zazzle) — dirty martini, crimson bow &amp; winter holly cocktail invitation.</description>
+      <enclosure url="https://darkshod.github.io/images/tini-bit-merry-party-card.jpg" length="94713" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/tini-bit-merry-party-card.jpg" type="image/jpeg" medium="image" width="736" height="913" />
+    </item>
+    <item>
+      <title>Pinkmas Coquette Bow Tree Holiday T-Shirt: Curated 2026 Buyer &amp; Gift Guide</title>
+      <link>https://darkshod.github.io/articles/pinkmas-coquette-bow-tree-holiday-t-shirt.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/pinkmas-coquette-bow-tree-holiday-t-shirt.html</guid>
+      <pubDate>Sat, 21 Nov 2026 20:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Pinkmas Coquette Bow Tree Holiday T-Shirt ($17.96 on Zazzle) featuring watercolor blush satin bows &amp; antique brass tapers.</description>
+      <enclosure url="https://darkshod.github.io/images/pinkmas-coquette-holiday-tshirt.jpg" length="105144" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/pinkmas-coquette-holiday-tshirt.jpg" type="image/jpeg" medium="image" width="736" height="913" />
+    </item>
+    <item>
+      <title>Sage Green Burgundy Family Christmas Card: Curated 2026 Buyer &amp; Gift Guide</title>
+      <link>https://darkshod.github.io/articles/sage-green-burgundy-bow-family-christmas-card.html</link>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/sage-green-burgundy-bow-family-christmas-card.html</guid>
+      <pubDate>Sat, 21 Nov 2026 19:00:00 GMT</pubDate>
+      <description>Shop &amp; customize the Sage Green Burgundy Bow Family Christmas Card ($1.34 per card on Zazzle) — heirloom sage mat, gold border &amp; personalized family signature.</description>
+      <enclosure url="https://darkshod.github.io/images/sage-burgundy-family-christmas-card.jpg" length="107218" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/images/sage-burgundy-family-christmas-card.jpg" type="image/jpeg" medium="image" width="736" height="913" />
+    </item>
+    <item>
       <title>Tartan Rocking Horse Ceramic Ornament: 2026 Gift Guide</title>
       <link>https://darkshod.github.io/articles/tartan-rocking-horse-ceramic-ornament.html</link>
-      <guid>https://darkshod.github.io/articles/tartan-rocking-horse-ceramic-ornament.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/tartan-rocking-horse-ceramic-ornament.html</guid>
+      <pubDate>Sat, 21 Nov 2026 18:00:00 GMT</pubDate>
       <description>Explore the heirloom Tartan Rocking Horse Ceramic Ornament for US holiday trees. Learn Zazzle personalization tips, pairing ideas, and print details.</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/tartan-rocking-horse-ceramic-ornament-guide-cover.jpg" length="157735" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/tartan-rocking-horse-ceramic-ornament-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Kiln and Clay Ceramics Studio Mug: Potter Gift Guide</title>
       <link>https://darkshod.github.io/articles/ceramics-studio-gift-idea.html</link>
-      <guid>https://darkshod.github.io/articles/ceramics-studio-gift-idea.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/ceramics-studio-gift-idea.html</guid>
+      <pubDate>Sat, 21 Nov 2026 17:00:00 GMT</pubDate>
       <description>Thoughtful gift guide for potters, ceramicists, and studio teachers featuring the Kiln and Clay Artisan Ceramics Studio 11oz Mug on Zazzle.</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/ceramics-studio-gift-idea-guide-cover.jpg" length="62314" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/ceramics-studio-gift-idea-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Botanical Florist Business Card: Studio Branding Guide</title>
       <link>https://darkshod.github.io/articles/botanical-florist-business-card-template.html</link>
-      <guid>https://darkshod.github.io/articles/botanical-florist-business-card-template.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/botanical-florist-business-card-template.html</guid>
+      <pubDate>Sat, 21 Nov 2026 16:00:00 GMT</pubDate>
       <description>Elevate your floral studio with the Meadow and Stem Botanical Florist Business Card on Zazzle. Paper stock, QR code, and customization tips.</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/botanical-florist-business-card-template-guide-cover.jpg" length="70743" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/botanical-florist-business-card-template-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Retro Italian Espresso Poster: Kitchen Wall Art Guide</title>
       <link>https://darkshod.github.io/articles/retro-italian-espresso-poster.html</link>
-      <guid>https://darkshod.github.io/articles/retro-italian-espresso-poster.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/retro-italian-espresso-poster.html</guid>
+      <pubDate>Sat, 21 Nov 2026 15:00:00 GMT</pubDate>
       <description>Style your coffee bar with the Il Portafiltro Retro Italian Espresso 18x24 Poster. Framing, sizing, and Zazzle print customization tips for US homes.</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/retro-italian-espresso-poster-guide-cover.jpg" length="62951" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/retro-italian-espresso-poster-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Night Shift Social Club Mug: 2026 Nurse Gift Guide</title>
       <link>https://darkshod.github.io/articles/night-shift-nurse-mug.html</link>
-      <guid>https://darkshod.github.io/articles/night-shift-nurse-mug.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/night-shift-nurse-mug.html</guid>
+      <pubDate>Sat, 21 Nov 2026 14:00:00 GMT</pubDate>
       <description>Thoughtful gift guide for night shift nurses and healthcare workers featuring the Night Shift Social Club Chamomile 11oz Mug on Zazzle.</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/night-shift-nurse-mug-guide-cover.jpg" length="61076" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/night-shift-nurse-mug-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Sourdough Baker Gift Shirt: Curated 2026 Buyer &amp; Gift Guide</title>
       <link>https://darkshod.github.io/articles/sourdough-baker-gift-shirt.html</link>
-      <guid>https://darkshod.github.io/articles/sourdough-baker-gift-shirt.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/sourdough-baker-gift-shirt.html</guid>
+      <pubDate>Sat, 21 Nov 2026 13:00:00 GMT</pubDate>
       <description>US guide to sourdough baker gift shirt: customization tips, styling ideas, and curated apparel picks on Zazzle. Customize online in the US on Zazzle with...</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/sourdough-baker-gift-shirt-guide-cover.jpg" length="62228" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/sourdough-baker-gift-shirt-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Oolong And Paperbacks Tee: Curated 2026 Buyer &amp; Gift Guide</title>
       <link>https://darkshod.github.io/articles/oolong-and-paperbacks-tee.html</link>
-      <guid>https://darkshod.github.io/articles/oolong-and-paperbacks-tee.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/oolong-and-paperbacks-tee.html</guid>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 GMT</pubDate>
       <description>US guide to oolong and paperbacks tee: customization tips, styling ideas, and curated apparel picks on Zazzle. Customize online in the US on Zazzle with...</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/oolong-and-paperbacks-tee-guide-cover.jpg" length="62358" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/oolong-and-paperbacks-tee-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Patriotic Woodcut Greeting Card: Curated 2026 Buyer &amp; Gift Guide</title>
       <link>https://darkshod.github.io/articles/patriotic-woodcut-greeting-card.html</link>
-      <guid>https://darkshod.github.io/articles/patriotic-woodcut-greeting-card.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/patriotic-woodcut-greeting-card.html</guid>
+      <pubDate>Sat, 21 Nov 2026 11:00:00 GMT</pubDate>
       <description>US guide to patriotic woodcut greeting card: customization tips, styling ideas, and curated patriotic stationery picks on Zazzle. Customize online in the...</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/patriotic-woodcut-greeting-card-guide-cover.jpg" length="68188" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/patriotic-woodcut-greeting-card-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Bookshop And Tea Lover T-Shirt: Curated 2026 Buyer &amp; Gift Guide</title>
       <link>https://darkshod.github.io/articles/bookshop-and-tea-lover-t-shirt.html</link>
-      <guid>https://darkshod.github.io/articles/bookshop-and-tea-lover-t-shirt.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/bookshop-and-tea-lover-t-shirt.html</guid>
+      <pubDate>Sat, 21 Nov 2026 10:00:00 GMT</pubDate>
       <description>US guide to bookshop and tea lover t-shirt: customization tips, styling ideas, and curated apparel picks on Zazzle. Customize online in the US on Zazzle...</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/bookshop-and-tea-lover-t-shirt-guide-cover.jpg" length="63687" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/bookshop-and-tea-lover-t-shirt-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>A Tini Bit Merry Shirt: Curated 2026 Buyer &amp; Gift Guide</title>
       <link>https://darkshod.github.io/articles/a-tini-bit-merry-shirt.html</link>
-      <guid>https://darkshod.github.io/articles/a-tini-bit-merry-shirt.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/a-tini-bit-merry-shirt.html</guid>
+      <pubDate>Sat, 21 Nov 2026 09:00:00 GMT</pubDate>
       <description>US guide to a tini bit merry shirt: customization tips, styling ideas, and curated holiday apparel picks on Zazzle. Customize online in the US on Zazzle...</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/a-tini-bit-merry-shirt-guide-cover.jpg" length="60119" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/a-tini-bit-merry-shirt-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Veterans Day Heritage Eagle Card: 2026 Buyer Guide</title>
       <link>https://darkshod.github.io/articles/happy-veterans-day-heritage-eagle-card.html</link>
-      <guid>https://darkshod.github.io/articles/happy-veterans-day-heritage-eagle-card.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/happy-veterans-day-heritage-eagle-card.html</guid>
+      <pubDate>Sat, 21 Nov 2026 08:00:00 GMT</pubDate>
       <description>US guide to happy veterans day heritage eagle card: customization tips, styling ideas, and curated patriotic stationery picks on Zazzle.</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/happy-veterans-day-heritage-eagle-card-guide-cover.jpg" length="73276" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/happy-veterans-day-heritage-eagle-card-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>A Tini Bit Merry Christmas Mug: Curated 2026 Buyer &amp; Gift Guide</title>
       <link>https://darkshod.github.io/articles/a-tini-bit-merry-christmas-mug.html</link>
-      <guid>https://darkshod.github.io/articles/a-tini-bit-merry-christmas-mug.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/a-tini-bit-merry-christmas-mug.html</guid>
+      <pubDate>Sat, 21 Nov 2026 07:00:00 GMT</pubDate>
       <description>US guide to a tini bit merry christmas mug: customization tips, styling ideas, and curated coffee mugs picks on Zazzle. Customize online in the US on...</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/a-tini-bit-merry-christmas-mug-guide-cover.jpg" length="64879" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/a-tini-bit-merry-christmas-mug-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Dirty Martini Christmas Tee: Curated 2026 Buyer &amp; Gift Guide</title>
       <link>https://darkshod.github.io/articles/dirty-martini-christmas-tee.html</link>
-      <guid>https://darkshod.github.io/articles/dirty-martini-christmas-tee.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/dirty-martini-christmas-tee.html</guid>
+      <pubDate>Sat, 21 Nov 2026 06:00:00 GMT</pubDate>
       <description>US guide to dirty martini christmas tee: customization tips, styling ideas, and curated holiday apparel picks on Zazzle. Customize online in the US on...</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/dirty-martini-christmas-tee-guide-cover.jpg" length="64092" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/dirty-martini-christmas-tee-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Old Money Christmas Card: Curated 2026 Buyer &amp; Gift Guide</title>
       <link>https://darkshod.github.io/articles/old-money-christmas-card.html</link>
-      <guid>https://darkshod.github.io/articles/old-money-christmas-card.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/old-money-christmas-card.html</guid>
+      <pubDate>Sat, 21 Nov 2026 05:00:00 GMT</pubDate>
       <description>US guide to old money christmas card: customization tips, styling ideas, and curated holiday greeting cards picks on Zazzle. Customize online in the US on...</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/old-money-christmas-card-guide-cover.jpg" length="65859" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/old-money-christmas-card-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Pink Bow Holiday Coffee Mug: Curated 2026 Buyer &amp; Gift Guide</title>
       <link>https://darkshod.github.io/articles/pink-bow-holiday-coffee-mug.html</link>
-      <guid>https://darkshod.github.io/articles/pink-bow-holiday-coffee-mug.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/pink-bow-holiday-coffee-mug.html</guid>
+      <pubDate>Sat, 21 Nov 2026 04:00:00 GMT</pubDate>
       <description>US guide to pink bow holiday coffee mug: customization tips, styling ideas, and curated coffee mugs picks on Zazzle. Customize online in the US on Zazzle...</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/pink-bow-holiday-coffee-mug-guide-cover.jpg" length="64430" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/pink-bow-holiday-coffee-mug-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Pinkmas Coquette Christmas Mug: Curated 2026 Buyer &amp; Gift Guide</title>
       <link>https://darkshod.github.io/articles/pinkmas-coquette-christmas-mug.html</link>
-      <guid>https://darkshod.github.io/articles/pinkmas-coquette-christmas-mug.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/pinkmas-coquette-christmas-mug.html</guid>
+      <pubDate>Sat, 21 Nov 2026 03:00:00 GMT</pubDate>
       <description>US guide to pinkmas coquette christmas mug: customization tips, styling ideas, and curated coffee mugs picks on Zazzle. Customize online in the US on...</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/pinkmas-coquette-christmas-mug-guide-cover.jpg" length="66095" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/pinkmas-coquette-christmas-mug-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Old Money Christmas Gift Wrap: Curated 2026 Buyer &amp; Gift Guide</title>
       <link>https://darkshod.github.io/articles/old-money-christmas-gift-wrap.html</link>
-      <guid>https://darkshod.github.io/articles/old-money-christmas-gift-wrap.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/old-money-christmas-gift-wrap.html</guid>
+      <pubDate>Sat, 21 Nov 2026 02:00:00 GMT</pubDate>
       <description>US guide to old money christmas gift wrap: customization tips, styling ideas, and curated holiday gift wrap picks on Zazzle. Customize online in the US on...</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/old-money-christmas-gift-wrap-guide-cover.jpg" length="67206" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/old-money-christmas-gift-wrap-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
     <item>
       <title>Tartan Rocking Horse Holiday Card: Curated 2026 Buyer &amp; Gift Guide</title>
       <link>https://darkshod.github.io/articles/tartan-rocking-horse-holiday-card.html</link>
-      <guid>https://darkshod.github.io/articles/tartan-rocking-horse-holiday-card.html</guid>
+      <guid isPermaLink="true">https://darkshod.github.io/articles/tartan-rocking-horse-holiday-card.html</guid>
+      <pubDate>Sat, 21 Nov 2026 01:00:00 GMT</pubDate>
       <description>US guide to tartan rocking horse holiday card: customization tips, styling ideas, and curated holiday greeting cards picks on Zazzle.</description>
+      <enclosure url="https://darkshod.github.io/assets/generated/tartan-rocking-horse-holiday-card-guide-cover.jpg" length="69967" type="image/jpeg" />
+      <media:content url="https://darkshod.github.io/assets/generated/tartan-rocking-horse-holiday-card-guide-cover.jpg" type="image/jpeg" medium="image" width="736" height="913" />
     </item>
   </channel>
 </rss>
